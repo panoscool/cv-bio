@@ -1,0 +1,40 @@
+{
+  "el": "Ελληνικά",
+  "en": "English",
+  "NavBarHome": "Home",
+  "NavBarAbout": "About",
+  "NavBarProjects": "Projects",
+  "NavBarWorkTogether": "Work Together",
+  "WorkPageLaptopTitle": "Επισκευές Η/Υ & Laptop",
+  "WorkPageLaptopRepair": [
+    "Επισκευή",
+    "Αναβάθμιση λειρουργικού και υλικού",
+    "Ανίχνευση και αφαίρεση ιων",
+    "Αντίγραφο ασφαλείας",
+    "Ανάκτηση δεδομένων απο κατεστραμένα μέσα",
+    "Εγατάσταση λειτουργικού συστήματος",
+    "Εγατάσταση περιφερειακών (εκτυπωτές, σαρωτές, πολυμηχανήματα κτλ)",
+    "Ξεκλείδωμα κωδικού",
+    "Γονικός έλεγχος - παιδική ασφάλεια"
+  ],
+  "WorkPageMobileTitle": "Επισκευές Κινητών & Tablet",
+  "WorkPageMobileRepair": [
+    "Αναβάθμιση λειτουργικού",
+    "Αντιγράφο ασφαλείας",
+    "Ξεκλείδωμα κωδικού και μοτίβου"
+  ],
+  "WorkPageWebTitle": "Υπηρεσίες Internet",
+  "WorkPageWebList": [
+    "Δημιουργία ιστοσελίδων",
+    "Συντήρηση",
+    "Στατιστικά στοιχεία",
+    "Προβολή στα κοινωνικά δίκτυα"
+  ],
+  "WorkPageLearningTitle": "Μαθήματα Ηλεκτρονικών Υπολογιστών",
+  "WorkPageLearningList": [
+    "Internet / email",
+    "Λειτουργικά συστήματα (Windows, macOS, Linux)",
+    "Microsoft Office (Word, Excel, PowerPoint, Outlook)",
+    "Εγκατάσταση εφαρμογών"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "en": "English",
+  "el": "Ελληνικά",
+  "NavBarHome": "Home",
+  "NavBarAbout": "About",
+  "NavBarProjects": "Projects",
+  "NavBarWorkTogether": "Work Together",
+  "WorkPageLaptopTitle": "Desktop & Laptop",
+  "WorkPageLaptopRepair": [
+    "Desktop & Laptop Repair",
+    "Software & Hardware Update",
+    "Scan and remove viruses",
+    "Data Backup",
+    "Data recovery from corrupted drives",
+    "Operation System installation",
+    "Installation of peripheral devices (printers, scanners etc)",
+    "Password recovery",
+    "Parental control - Child safety"
+  ],
+  "WorkPageMobileTitle": "Mobile & Tablet",
+  "WorkPageMobileRepair": [
+    "Software update",
+    "Data backup",
+    "Password and pattern recovery"
+  ],
+  "WorkPageWebTitle": "Web Services",
+  "WorkPageWebList": [
+    "Websites creation",
+    "Site support",
+    "Analytics",
+    "Social media integration"
+  ],
+  "WorkPageLearningTitle": "Computer Learning",
+  "WorkPageLearningList": [
+    "Internet / Email",
+    "Microsoft Office (Word, Excel, PowerPoint, Outlook)",
+    "Operating Systems (Windows, macOS, Linux)",
+    "Software installation"
+  ]
+}

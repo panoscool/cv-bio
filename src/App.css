@@ -1,0 +1,62 @@
+.avatar-img {
+  height: 250px;
+  padding-top: 2em;
+}
+
+.banner-text {
+  background-color: black;
+  opacity: 0.8;
+  width: 75%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.banner-text h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+}
+
+.banner-text hr {
+  border-top: 5px dotted white;
+  border-bottom: none;
+  width: 50%;
+  margin: auto;
+}
+
+.banner-text p {
+  color: white;
+  font-size: 20px;
+  padding: 1em;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+}
+
+.social-links i {
+  color: white;
+  font-size: 5em;
+  padding: 8px;
+}
+
+@media (max-width: 720px) {
+  .banner-text {
+    width: 95%;
+  }
+
+  .banner-text h1 {
+    font-size: 40px;
+  }
+
+  .social-links {
+    width: 90%;
+  }
+
+  .social-links i {
+    font-size: 4em;
+  }
+}
