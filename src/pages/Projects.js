@@ -5,6 +5,8 @@ import ProjectCard from "../components/ProjectCard";
 import lang from "../services/lang";
 import AtlantisLogo from "../assets/images/atlantis-shine-logo.jpg";
 import BurgerLogo from "../assets/images/burger-logo.jpg";
+import MyaLogo from "../assets/images/mya-logo.jpg";
+import YoloLogo from "../assets/images/yolo-logo.jpg";
 
 const styles = theme => ({
   root: {
@@ -28,6 +30,23 @@ const FullWidthGrid = props => {
             img={AtlantisLogo}
             title={"Atlantis Shine"}
             live={"https://atlantis-shine.gr/"}
+            condition={["github", "codesandbox"]}
+          />
+        </Grid>
+        <Grid item xs={12} sm={3}>
+          <ProjectCard
+            img={MyaLogo}
+            title={"Mya Collection"}
+            live={"https://myacollection.com.gr/"}
+            condition={["github", "codesandbox"]}
+          />
+        </Grid>
+        <Grid item xs={12} sm={3}>
+          <ProjectCard
+            img={YoloLogo}
+            title={"Yolo Fashions"}
+            live={"http://yolofashions.com"}
+            condition={["github", "codesandbox"]}
           />
         </Grid>
         <Grid item xs={12} sm={3}>
@@ -39,13 +58,8 @@ const FullWidthGrid = props => {
             codesandbox={
               "https://codesandbox.io/s/github/panoscool/burger-builder"
             }
+            condition={[]}
           />
-        </Grid>
-        <Grid item xs={12} sm={3}>
-          <ProjectCard />
-        </Grid>
-        <Grid item xs={12} sm={3}>
-          <ProjectCard />
         </Grid>
       </Grid>
     </div>

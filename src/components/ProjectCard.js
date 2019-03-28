@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import {
   Card,
@@ -22,7 +21,7 @@ const styles = {
 };
 
 const ImgMediaCard = props => {
-  const { classes, img, title, live, github, codesandbox } = props;
+  const { classes, img, title, live, github, codesandbox, condition } = props;
   return (
     <Card className={classes.card}>
       <CardActionArea>
@@ -45,7 +44,11 @@ const ImgMediaCard = props => {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
+        <Button
+          size="small"
+          color="primary"
+          disabled={condition.includes("github")}
+        >
           <a
             href={github}
             target="_blank"
@@ -55,7 +58,11 @@ const ImgMediaCard = props => {
             GitHub
           </a>
         </Button>
-        <Button size="small" color="primary">
+        <Button
+          size="small"
+          color="primary"
+          disabled={condition.includes("codesandbox")}
+        >
           <a
             href={codesandbox}
             target="_blank"
@@ -65,7 +72,11 @@ const ImgMediaCard = props => {
             CodeSandbox
           </a>
         </Button>
-        <Button size="small" color="primary">
+        <Button
+          size="small"
+          color="primary"
+          disabled={condition.includes("live")}
+        >
           <a
             href={live}
             target="_blank"
@@ -78,10 +89,6 @@ const ImgMediaCard = props => {
       </CardActions>
     </Card>
   );
-};
-
-ImgMediaCard.propTypes = {
-  classes: PropTypes.object.isRequired
 };
 
 export default withStyles(styles)(ImgMediaCard);
