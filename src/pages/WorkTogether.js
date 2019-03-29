@@ -3,6 +3,10 @@ import { withStyles } from "@material-ui/core/styles";
 import { Paper, Grid } from "@material-ui/core";
 import WorkCard from "../components/WorkCard";
 import lang from "../services/lang";
+import CodeIcon from "../assets/images/code-icon.jpg";
+import ServiceIcon from "../assets/images/service-icon.jpg";
+import UpdateIcon from "../assets/images/update-icon.jpg";
+import LearnIcon from "../assets/images/learn-icon.jpg";
 
 const styles = theme => ({
   root: {
@@ -33,6 +37,7 @@ const FullWidthGrid = props => {
         </Grid>
         <Grid item xs={12} sm={3}>
           <WorkCard
+            img={CodeIcon}
             icon={icons.globe}
             title={lang("WorkPageWebTitle")}
             list={lang("WorkPageWebList")}
@@ -40,6 +45,7 @@ const FullWidthGrid = props => {
         </Grid>
         <Grid item xs={12} sm={3}>
           <WorkCard
+            img={ServiceIcon}
             icon={icons.laptop}
             title={lang("WorkPageLaptopTitle")}
             list={lang("WorkPageLaptopRepair")}
@@ -47,6 +53,7 @@ const FullWidthGrid = props => {
         </Grid>
         <Grid item xs={12} sm={3}>
           <WorkCard
+            img={UpdateIcon}
             icon={icons.mobile}
             title={lang("WorkPageMobileTitle")}
             list={lang("WorkPageMobileRepair")}
@@ -54,6 +61,7 @@ const FullWidthGrid = props => {
         </Grid>
         <Grid item xs={12} sm={3}>
           <WorkCard
+            img={LearnIcon}
             icon={icons.book}
             title={lang("WorkPageLearningTitle")}
             list={lang("WorkPageLearningList")}

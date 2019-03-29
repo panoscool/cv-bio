@@ -28,7 +28,7 @@ const ImgMediaCard = props => {
           alt={props.title}
           className={classes.media}
           height="140"
-          image={props.icon}
+          image={props.img}
           title={props.title}
         />
         <CardContent>
