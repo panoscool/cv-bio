@@ -21,7 +21,16 @@ const styles = {
 };
 
 const ImgMediaCard = props => {
-  const { classes, img, title, live, github, codesandbox, condition } = props;
+  const {
+    classes,
+    img,
+    title,
+    text,
+    live,
+    github,
+    codesandbox,
+    condition
+  } = props;
   return (
     <Card className={classes.card}>
       <CardActionArea>
@@ -37,10 +46,7 @@ const ImgMediaCard = props => {
           <Typography gutterBottom variant="h5" component="h2">
             {title}
           </Typography>
-          <Typography component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography>
+          <Typography component="p">{text}</Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>

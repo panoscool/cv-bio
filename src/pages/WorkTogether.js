@@ -33,7 +33,7 @@ const FullWidthGrid = props => {
     <div className={classes.root}>
       <Grid container spacing={24}>
         <Grid item xs={12}>
-          <Paper className={classes.paper}>xs=12</Paper>
+          <Paper className={classes.paper}>{lang("WorkPageParagraph")}</Paper>
         </Grid>
         <Grid item xs={12} sm={3}>
           <WorkCard
