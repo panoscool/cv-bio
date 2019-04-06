@@ -17,6 +17,7 @@ import { withStyles } from "@material-ui/core/styles";
 import { Menu, Home, Info, Work, Pages } from "@material-ui/icons";
 import LanguageSwitcher from "./LanguageSwitcher";
 import lang from "../services/lang";
+import logo from "../assets/images/logo.png";
 
 const drawerWidth = 240;
 
@@ -167,7 +168,7 @@ class Layout extends Component {
                   to="/"
                   style={{ textDecoration: "inherit", color: "inherit" }}
                 >
-                  PanosCool
+                  <img src={logo} alt="PanosCool" width="105px" height="35px" />
                 </Link>
               </Typography>
               {topMenu}

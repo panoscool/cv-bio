@@ -4,11 +4,11 @@ import el from "../translations/el.json";
 
 const translations = { en, el };
 
-export const getLanguage = () => store.get("cool_language", "en");
+export const getLanguage = () => store.get("panoscool_language", "en");
 export const setLanguage = language => {
   const currentLanguage = getLanguage();
   if (language !== currentLanguage) {
-    store.set("cool_language", language);
+    store.set("panoscool_language", language);
     window.location.reload();
   }
 };

@@ -36,11 +36,9 @@ const ImgMediaCard = props => {
             {props.icon} {props.title}
           </Typography>
           <Typography component="p">
-            <ul>
-              {props.list.map((item, index) => {
-                return <li key={index}>{item}</li>;
-              })}
-            </ul>
+            {props.list.map((item, index) => {
+              return <li key={index}>{item}</li>;
+            })}
           </Typography>
         </CardContent>
       </CardActionArea>
