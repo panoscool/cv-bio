@@ -33,7 +33,17 @@ const FullWidthGrid = props => {
     <div className={classes.root}>
       <Grid container spacing={24}>
         <Grid item xs={12}>
-          <Paper className={classes.paper}>{lang("WorkPageParagraph")}</Paper>
+          <Paper className={classes.paper}>
+            <div className="contact-links">
+              <p>{lang("WorkPageParagraph")}</p>
+              <a href="mailto:lkullolli@gmail.com?Subject=Work Together">
+                <i class="fas fa-envelope" />
+              </a>
+              <a href="https://m.me/panoscool1">
+                <i class="fab fa-facebook-messenger" />
+              </a>
+            </div>
+          </Paper>
         </Grid>
         <Grid item xs={12} sm={3}>
           <WorkCard

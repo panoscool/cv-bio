@@ -43,6 +43,12 @@
   padding: 8px;
 }
 
+.contact-links i {
+  font-size: 2em;
+  margin: 5px;
+  color: blue;
+}
+
 @media (max-width: 720px) {
   .banner-text {
     width: 95%;
