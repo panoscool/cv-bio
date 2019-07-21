@@ -1,5 +1,5 @@
 import React from "react";
-import { withStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import {
   Card,
   CardActionArea,
@@ -8,7 +8,7 @@ import {
   Typography
 } from "@material-ui/core";
 
-const styles = {
+const useStyles = makeStyles(theme => ({
   card: {
     maxWidth: 345
   },
@@ -16,10 +16,11 @@ const styles = {
     // ⚠️ object-fit is not supported by IE 11.
     objectFit: "cover"
   }
-};
+}));
 
 const ImgMediaCard = props => {
-  const { classes } = props;
+  const classes = useStyles();
+
   return (
     <Card className={classes.card}>
       <CardActionArea>
@@ -46,4 +47,4 @@ const ImgMediaCard = props => {
   );
 };
 
-export default withStyles(styles)(ImgMediaCard);
+export default ImgMediaCard;

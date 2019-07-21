@@ -1,29 +1,28 @@
-import React, { Component } from "react";
+import React from "react";
 import { Route, Switch, withRouter } from "react-router-dom";
+import { Container } from "@material-ui/core";
 
 import Layout from "./Layout/Layout";
 import "./App.css";
 
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Projects from "./pages/Projects";
-import WorkTogether from "./pages/WorkTogether";
-import Auth from "./pages/Auth";
+import Home from "./components/Home";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import WorkTogether from "./components/WorkTogether";
 
-class App extends Component {
-  render() {
-    return (
-      <Layout>
+const App = () => {
+  return (
+    <Layout>
+      <Container maxWidth="xl">
         <Switch>
           <Route path="/work-together" component={WorkTogether} />
           <Route path="/projects" component={Projects} />
           <Route path="/about" component={About} />
-          <Route path="/auth" component={Auth} />
           <Route path="/" component={Home} />
         </Switch>
-      </Layout>
-    );
-  }
-}
+      </Container>
+    </Layout>
+  );
+};
 
 export default withRouter(App);

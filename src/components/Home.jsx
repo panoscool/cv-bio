@@ -1,9 +1,9 @@
 import React from "react";
-import { withStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import { Paper } from "@material-ui/core";
 import avatarImg from "../assets/images/avatar.png";
 
-const styles = theme => ({
+const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1
   },
@@ -12,10 +12,10 @@ const styles = theme => ({
     textAlign: "center",
     color: theme.palette.text.secondary
   }
-});
+}));
 
 const CenteredGrid = props => {
-  const { classes } = props;
+  const classes = useStyles();
 
   return (
     <div className={classes.root}>
@@ -59,4 +59,4 @@ const CenteredGrid = props => {
   );
 };
 
-export default withStyles(styles)(CenteredGrid);
+export default CenteredGrid;

@@ -49,6 +49,13 @@
   color: blue;
 }
 
+.projects-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-around;
+}
+
 @media (max-width: 720px) {
   .banner-text {
     width: 95%;
