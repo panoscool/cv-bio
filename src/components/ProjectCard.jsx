@@ -12,7 +12,8 @@ import {
 
 const useStyles = makeStyles(theme => ({
   card: {
-    maxWidth: 345
+    maxWidth: 310,
+    marginBottom: 10
   },
   media: {
     // ⚠️ object-fit is not supported by IE 11.
@@ -22,7 +23,7 @@ const useStyles = makeStyles(theme => ({
 
 const ImgMediaCard = props => {
   const classes = useStyles();
-  
+
   const { img, title, text, live, github, codesandbox, condition } = props;
   return (
     <Card className={classes.card}>

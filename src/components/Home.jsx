@@ -1,7 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Paper } from "@material-ui/core";
-import avatarImg from "../assets/images/avatar.png";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -20,7 +19,7 @@ const CenteredGrid = props => {
   return (
     <div className={classes.root}>
       <Paper className={classes.paper}>
-        <img src={avatarImg} alt="avatar" className="avatar-img" />
+        <img src="/assets/images/avatar.png" alt="avatar" className="avatar-img" />
         <div className="banner-text">
           <h1>Front End Developer</h1>
 

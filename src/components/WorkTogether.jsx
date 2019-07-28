@@ -3,10 +3,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Paper } from "@material-ui/core";
 import WorkCard from "../components/WorkCard";
 import lang from "../services/lang";
-import CodeIcon from "../assets/images/code-icon.jpg";
-import ServiceIcon from "../assets/images/service-icon.jpg";
-import UpdateIcon from "../assets/images/update-icon.jpg";
-import LearnIcon from "../assets/images/learn-icon.jpg";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -30,6 +26,33 @@ const icons = {
 const FullWidthGrid = props => {
   const classes = useStyles();
 
+  const array = [
+    {
+      img: "/assets/images/code-icon.jpg",
+      icon: icons.globe,
+      title: lang("WorkPageWebTitle"),
+      list: lang("WorkPageWebList")
+    },
+    {
+      img: "/assets/images/service-icon.jpg",
+      icon: icons.laptop,
+      title: lang("WorkPageLaptopTitle"),
+      list: lang("WorkPageLaptopRepair")
+    },
+    {
+      img: "/assets/images/update-icon.jpg",
+      icon: icons.mobile,
+      title: lang("WorkPageMobileTitle"),
+      list: lang("WorkPageMobileRepair")
+    },
+    {
+      img: "/assets/images/learn-icon.jpg",
+      icon: icons.book,
+      title: lang("WorkPageLearningTitle"),
+      list: lang("WorkPageLearningList")
+    }
+  ]
+
   return (
     <div className={classes.root}>
       <Paper className={classes.paper}>
@@ -44,30 +67,14 @@ const FullWidthGrid = props => {
         </div>
       </Paper>
       <div className="projects-card">
-        <WorkCard
-          img={CodeIcon}
-          icon={icons.globe}
-          title={lang("WorkPageWebTitle")}
-          list={lang("WorkPageWebList")}
-        />
-        <WorkCard
-          img={ServiceIcon}
-          icon={icons.laptop}
-          title={lang("WorkPageLaptopTitle")}
-          list={lang("WorkPageLaptopRepair")}
-        />
-        <WorkCard
-          img={UpdateIcon}
-          icon={icons.mobile}
-          title={lang("WorkPageMobileTitle")}
-          list={lang("WorkPageMobileRepair")}
-        />
-        <WorkCard
-          img={LearnIcon}
-          icon={icons.book}
-          title={lang("WorkPageLearningTitle")}
-          list={lang("WorkPageLearningList")}
-        />
+        {array.map(item => (
+          <WorkCard
+            img={item.img}
+            icon={item.icon}
+            title={item.title}
+            list={item.list}
+          />
+        ))}
       </div>
     </div>
   );

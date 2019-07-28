@@ -14,7 +14,6 @@ import { Menu } from "@material-ui/icons";
 import LanguageSwitcher from "./LanguageSwitcher";
 import NavBarMenu from "./NavBarMenu";
 import DrawerMenu from "./DrawerMenu";
-import logo from "../assets/images/logo.png";
 
 const drawerWidth = 240;
 
@@ -85,7 +84,7 @@ const Layout = ({ children, location: { pathname } }) => {
                 to="/"
                 style={{ textDecoration: "inherit", color: "inherit" }}
               >
-                <img src={logo} alt="PanosCool" width="105px" height="35px" />
+                <img src="/assets/images/logo.png" alt="PanosCool" width="105px" height="35px" />
               </Link>
             </Typography>
             <NavBarMenu />

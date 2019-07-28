@@ -52,8 +52,7 @@
 .projects-card {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-around;
+  /* justify-content: space-between; */
 }
 
 @media (max-width: 720px) {
