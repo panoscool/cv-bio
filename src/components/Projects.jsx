@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import ProjectCard from "../components/ProjectCard";
-import projectsArray from "./ProjectsArray";
+import projectsArray from "../data/ProjectsArray";
 
 const FullWidthGrid = () => {
   return (
