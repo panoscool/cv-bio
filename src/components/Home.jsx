@@ -7,19 +7,29 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1
   },
   paper: {
-    padding: theme.spacing.unit * 2,
+    padding: theme.spacing(2),
     textAlign: "center",
     color: theme.palette.text.secondary
   }
 }));
 
-const CenteredGrid = props => {
+const CenteredGrid = () => {
   const classes = useStyles();
+
+  const links = [
+    { href: "https://www.linkedin.com/in/lkullolli/", icon: "fab fa-linkedin" },
+    { href: "https://github.com/panoscool", icon: "fab fa-github-square" },
+    { href: "https://facebook.com", icon: "fab fa-facebook" }
+  ];
 
   return (
     <div className={classes.root}>
       <Paper className={classes.paper}>
-        <img src="/assets/images/avatar.png" alt="avatar" className="avatar-img" />
+        <img
+          src="/assets/images/avatar.png"
+          alt="avatar"
+          className="avatar-img"
+        />
         <div className="banner-text">
           <h1>Front End Developer</h1>
 
@@ -30,27 +40,11 @@ const CenteredGrid = props => {
           </p>
 
           <div className="social-links">
-            <a
-              href="https://www.linkedin.com/in/lkullolli/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-linkedin" aria-hidden="true" />
-            </a>
-            <a
-              href="https://github.com/panoscool"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-github-square" aria-hidden="true" />
-            </a>
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-facebook" aria-hidden="true" />
-            </a>
+            {links.map(obj => (
+              <a href={obj.href} key={obj.icon} target="_blank" rel="noopener noreferrer">
+                <i className={obj.icon} aria-hidden="true" />
+              </a>
+            ))}
           </div>
         </div>
       </Paper>

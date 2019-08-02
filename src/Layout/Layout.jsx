@@ -75,7 +75,7 @@ const Layout = ({ children, location: { pathname } }) => {
               <Menu />
             </IconButton>
             <Typography
-              variant="title"
+              variant="h6"
               color="inherit"
               className={classes.grow}
               noWrap

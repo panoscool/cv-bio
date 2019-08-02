@@ -1,20 +1,17 @@
 import React from "react";
+import { Grid } from "@material-ui/core";
 import ProjectCard from "../components/ProjectCard";
-import projectsArray from './ProjectsArray'
+import projectsArray from "./ProjectsArray";
 
-const FullWidthGrid = props => {
+const FullWidthGrid = () => {
   return (
-    <div className="projects-card">
-      {projectsArray.map(proj => (
-        <ProjectCard
-          img={proj.img}
-          title={proj.title}
-          text={proj.text}
-          live={proj.live}
-          condition={proj.condition}
-        />
+    <Grid container spacing={1}>
+      {projectsArray.map(obj => (
+        <Grid item xs={12} md={3}>
+          <ProjectCard key={obj.title} {...obj} />
+        </Grid>
       ))}
-    </div>
+    </Grid>
   );
 };
 

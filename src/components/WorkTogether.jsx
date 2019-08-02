@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Paper } from "@material-ui/core";
+import { Paper, Grid } from "@material-ui/core";
 import WorkCard from "../components/WorkCard";
 import lang from "../services/lang";
 
@@ -9,7 +9,7 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1
   },
   paper: {
-    padding: theme.spacing.unit * 2,
+    padding: theme.spacing(2),
     textAlign: "center",
     marginBottom: 16,
     color: theme.palette.text.secondary
@@ -51,7 +51,7 @@ const FullWidthGrid = props => {
       title: lang("WorkPageLearningTitle"),
       list: lang("WorkPageLearningList")
     }
-  ]
+  ];
 
   return (
     <div className={classes.root}>
@@ -59,23 +59,20 @@ const FullWidthGrid = props => {
         <div className="contact-links">
           <p>{lang("WorkPageParagraph")}</p>
           <a href="mailto:lkullolli@gmail.com?Subject=Work Together">
-            <i class="fas fa-envelope" />
+            <i className="fas fa-envelope" />
           </a>
           <a href="https://m.me/panoscool1">
-            <i class="fab fa-facebook-messenger" />
+            <i className="fab fa-facebook-messenger" />
           </a>
         </div>
       </Paper>
-      <div className="projects-card">
-        {array.map(item => (
-          <WorkCard
-            img={item.img}
-            icon={item.icon}
-            title={item.title}
-            list={item.list}
-          />
+      <Grid container spacing={1}>
+        {array.map(obj => (
+          <Grid item xs={12} md={3}>
+            <WorkCard key={obj.img} {...obj} />
+          </Grid>
         ))}
-      </div>
+      </Grid>
     </div>
   );
 };

@@ -11,13 +11,9 @@ import {
 } from "@material-ui/core";
 
 const useStyles = makeStyles(theme => ({
-  card: {
-    maxWidth: 310,
-    marginBottom: 10
-  },
   media: {
-    // ⚠️ object-fit is not supported by IE 11.
-    objectFit: "cover"
+    height: "auto",
+    objectFit: "fill"
   }
 }));
 
@@ -25,8 +21,15 @@ const ImgMediaCard = props => {
   const classes = useStyles();
 
   const { img, title, text, live, github, codesandbox, condition } = props;
+
+  const buttons = [
+    { disabled: "github", href: github, label: "GitHub" },
+    { disabled: "codesandbox", href: codesandbox, label: "CodeSandbox" },
+    { disabled: "live", href: live, label: "Live" }
+  ];
+
   return (
-    <Card className={classes.card}>
+    <Card className="card">
       <CardActionArea>
         <CardMedia
           component="img"
@@ -44,48 +47,23 @@ const ImgMediaCard = props => {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button
-          size="small"
-          color="primary"
-          disabled={condition.includes("github")}
-        >
-          <a
-            href={github}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ textDecoration: "inherit", color: "inherit" }}
+        {buttons.map(obj => (
+          <Button
+            key={obj.label}
+            size="small"
+            color="primary"
+            disabled={condition.includes(obj.disabled)}
           >
-            GitHub
-          </a>
-        </Button>
-        <Button
-          size="small"
-          color="primary"
-          disabled={condition.includes("codesandbox")}
-        >
-          <a
-            href={codesandbox}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ textDecoration: "inherit", color: "inherit" }}
-          >
-            CodeSandbox
-          </a>
-        </Button>
-        <Button
-          size="small"
-          color="primary"
-          disabled={condition.includes("live")}
-        >
-          <a
-            href={live}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ textDecoration: "inherit", color: "inherit" }}
-          >
-            Live Demo
-          </a>
-        </Button>
+            <a
+              href={obj.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "inherit", color: "inherit" }}
+            >
+              {obj.label}
+            </a>
+          </Button>
+        ))}
       </CardActions>
     </Card>
   );
