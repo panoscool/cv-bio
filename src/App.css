@@ -49,6 +49,11 @@
   color: blue;
 }
 
+.project-list {
+  list-style: none;
+  padding-left: 8px;
+}
+
 @media (max-width: 720px) {
   .banner-text {
     width: 95%;

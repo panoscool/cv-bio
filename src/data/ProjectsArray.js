@@ -2,35 +2,35 @@ import lang from "../services/lang";
 
 const projects = [
   {
-    img: '/assets/images/atlantis-logo.jpg',
+    img: "/assets/images/atlantis-logo.jpg",
     title: "Atlantis Shine",
-    text: `${lang("ProjectsPageAtlantisText")}`,
+    text: lang("ProjectsPageAtlantisText"),
     live: "https://atlantis-shine.gr/",
     condition: ["github", "codesandbox"]
   },
   {
-    img: '/assets/images/mya-logo.jpg',
+    img: "/assets/images/mya-logo.jpg",
     title: "Mya Collection",
-    text: `${lang("ProjectsPageMyaText")}`,
+    text: lang("ProjectsPageMyaText"),
     live: "https://myacollection.com/",
     condition: ["github", "codesandbox"]
   },
   {
-    img: '/assets/images/yolo-logo.jpg',
+    img: "/assets/images/yolo-logo.jpg",
     title: "Yolo Fashions",
-    text: `${lang("ProjectsPageYoloText")}`,
+    text: lang("ProjectsPageYoloText"),
     live: "http://yolofashions.com",
     condition: ["github", "codesandbox"]
   },
   {
-    img: '/assets/images/burger-logo.jpg',
+    img: "/assets/images/burger-logo.jpg",
     title: "Burger Builder",
-    text: `${lang("ProjectsPageBurgerText")}`,
+    text: lang("ProjectsPageBurgerText"),
     live: "https://cool-burger-builder.firebaseapp.com/",
     github: "https://github.com/panoscool/burger-builder",
     codesandbox: "https://codesandbox.io/s/github/panoscool/burger-builder",
     condition: []
   }
-]
+];
 
-export default projects
+export default projects;
