@@ -25,6 +25,17 @@
       "icon": "fas fa-bullhorn"
     }
   ],
+  "ProjectsPageSloaneText": [
+    { "text": "Build with: Magento", "icon": "fas fa-tools" },
+    {
+      "text": "Additional: Google Analytics, Social Media",
+      "icon": "fas fa-list-ol"
+    },
+    {
+      "text": "Digital Marketing: Facebook, Instagram",
+      "icon": "fas fa-bullhorn"
+    }
+  ],
   "ProjectsPageYoloText": [
     { "text": "Status: In progress", "icon": "fas fa-info-circle" },
     { "text": "Build with: WordPress & WooCommerce", "icon": "fas fa-tools" },

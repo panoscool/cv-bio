@@ -32,10 +32,10 @@ const ImgMediaCard = props => {
           className={classes.media}
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography gutterBottom variant="h6">
             {icon} {title}
           </Typography>
-          <Typography component="p">
+          <Typography variant="body2">
             {list.map((item, index) => {
               return <li key={index}>{item}</li>;
             })}

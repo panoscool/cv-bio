@@ -28,8 +28,6 @@ const ImgMediaCard = props => {
     { disabled: "live", href: live, label: "Live" }
   ];
 
-  console.log(text);
-
   return (
     <Card className="card">
       <CardActionArea>
@@ -42,17 +40,16 @@ const ImgMediaCard = props => {
           className={classes.media}
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography gutterBottom variant="h6">
             {title}
           </Typography>
-          <Typography component="p">
-            {text.map(obj => {
-              return (
-                <li className="project-list">
-                  <i className={obj.icon} aria-hidden="true" /> {obj.text}
-                </li>
-              );
-            })}
+          <Typography variant="body2">
+            {text.map(obj => (
+              <li className="project-list">
+                <i className={obj.icon} aria-hidden="true" />
+                <span>{obj.text}</span>
+              </li>
+            ))}
           </Typography>
         </CardContent>
       </CardActionArea>
