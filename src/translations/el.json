@@ -6,16 +6,16 @@
   "NavBarProjects": "Projects",
   "NavBarWorkTogether": "Work Together",
   "ProjectsPageAtlantisText": [
-    { "text": "κατάσταση: Ολοκληρώθηκε", "icon": "fas fa-info-circle" },
-    { "text": "κατασκευή: WordPress", "icon": "fas fa-tools" },
+    { "text": "Κατάσταση: Ολοκληρώθηκε", "icon": "fas fa-info-circle" },
+    { "text": "Κατασκευή: WordPress", "icon": "fas fa-tools" },
     {
       "text": "Επιπλέον: Google Analytics, Social Media",
       "icon": "fas fa-list-ol"
     }
   ],
   "ProjectsPageMyaText": [
-    { "text": "κατάσταση: Ολοκληρώθηκε", "icon": "fas fa-info-circle" },
-    { "text": "κατασκευή: Shopify", "icon": "fas fa-tools" },
+    { "text": "Κατάσταση: Ολοκληρώθηκε", "icon": "fas fa-info-circle" },
+    { "text": "Κατασκευή: Shopify", "icon": "fas fa-tools" },
     {
       "text": "Επιπλέον: Google Analytics, Social Media",
       "icon": "fas fa-list-ol"
@@ -26,8 +26,8 @@
     }
   ],
   "ProjectsPageYoloText": [
-    { "text": "κατάσταση: In progress", "icon": "fas fa-info-circle" },
-    { "text": "κατασκευή: WordPress & WooCommerce", "icon": "fas fa-tools" },
+    { "text": "Κατάσταση: In progress", "icon": "fas fa-info-circle" },
+    { "text": "Κατασκευή: WordPress & WooCommerce", "icon": "fas fa-tools" },
     {
       "text": "Επιπλέον: Google Analytics, Social Media",
       "icon": "fas fa-list-ol"
@@ -38,8 +38,8 @@
     }
   ],
   "ProjectsPageBurgerText": [
-    { "text": "κατάσταση: Ολοκληρώθηκε", "icon": "fas fa-info-circle" },
-    { "text": "κατασκευή: ReactJS & Redux", "icon": "fas fa-tools" },
+    { "text": "Κατάσταση: Ολοκληρώθηκε", "icon": "fas fa-info-circle" },
+    { "text": "Κατασκευή: ReactJS & Redux", "icon": "fas fa-tools" },
     { "text": "Επιπλέον: Google Firebase", "icon": "fas fa-list-ol" }
   ],
   "WorkPageParagraph": "",
