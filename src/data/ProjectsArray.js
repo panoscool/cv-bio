@@ -9,7 +9,7 @@ const projects = [
     condition: ["github", "codesandbox"]
   },
   {
-    img: "/assets/images/mya-logo.jpg",
+    img: "/assets/images/sloane-logo.jpg",
     title: "Sloane Boutique",
     text: lang("ProjectsPageSloaneText"),
     live: "https://sloaneboutique.gr/",

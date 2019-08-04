@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Paper, Grid } from "@material-ui/core";
-import WorkCard from "../components/WorkCard";
+import { Grid } from "@material-ui/core";
+import SkillsCard from "./SkillsCard";
 import lang from "../services/lang";
 
 const useStyles = makeStyles(theme => ({
@@ -55,21 +55,10 @@ const FullWidthGrid = props => {
 
   return (
     <div className={classes.root}>
-      <Paper className={classes.paper}>
-        <div className="contact-links">
-          <p>{lang("WorkPageParagraph")}</p>
-          <a href="mailto:lkullolli@gmail.com?Subject=Work Together">
-            <i className="fas fa-envelope" />
-          </a>
-          <a href="https://m.me/panoscool1">
-            <i className="fab fa-facebook-messenger" />
-          </a>
-        </div>
-      </Paper>
       <Grid container spacing={1}>
         {array.map(obj => (
           <Grid item xs={12} md={3}>
-            <WorkCard key={obj.img} {...obj} />
+            <SkillsCard key={obj.img} {...obj} />
           </Grid>
         ))}
       </Grid>

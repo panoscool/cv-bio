@@ -3,19 +3,31 @@
   "en": "English",
   "NavBarHome": "Home",
   "NavBarAbout": "About",
+  "NavBarSkills": "Skills",
   "NavBarProjects": "Projects",
-  "NavBarWorkTogether": "Work Together",
   "ProjectsPageAtlantisText": [
-    { "text": "Κατάσταση: Ολοκληρώθηκε", "icon": "fas fa-info-circle" },
-    { "text": "Κατασκευή: WordPress", "icon": "fas fa-tools" },
+    {
+      "text": "Κατάσταση: Ολοκληρώθηκε",
+      "icon": "fas fa-info-circle"
+    },
+    {
+      "text": "Κατασκευή: WordPress",
+      "icon": "fas fa-tools"
+    },
     {
       "text": "Επιπλέον: Google Analytics, Social Media",
       "icon": "fas fa-list-ol"
     }
   ],
   "ProjectsPageMyaText": [
-    { "text": "Κατάσταση: Ολοκληρώθηκε", "icon": "fas fa-info-circle" },
-    { "text": "Κατασκευή: Shopify", "icon": "fas fa-tools" },
+    {
+      "text": "Κατάσταση: Ολοκληρώθηκε",
+      "icon": "fas fa-info-circle"
+    },
+    {
+      "text": "Κατασκευή: Shopify",
+      "icon": "fas fa-tools"
+    },
     {
       "text": "Επιπλέον: Google Analytics, Social Media",
       "icon": "fas fa-list-ol"
@@ -26,7 +38,10 @@
     }
   ],
   "ProjectsPageSloaneText": [
-    { "text": "Κατασκευή: Magento", "icon": "fas fa-tools" },
+    {
+      "text": "Κατασκευή: Magento",
+      "icon": "fas fa-tools"
+    },
     {
       "text": "Επιπλέον: Google Analytics, Social Media",
       "icon": "fas fa-list-ol"
@@ -37,8 +52,14 @@
     }
   ],
   "ProjectsPageYoloText": [
-    { "text": "Κατάσταση: Υπό κατασκευή", "icon": "fas fa-info-circle" },
-    { "text": "Κατασκευή: WordPress & WooCommerce", "icon": "fas fa-tools" },
+    {
+      "text": "Κατάσταση: Υπό κατασκευή",
+      "icon": "fas fa-info-circle"
+    },
+    {
+      "text": "Κατασκευή: WordPress & WooCommerce",
+      "icon": "fas fa-tools"
+    },
     {
       "text": "Επιπλέον: Google Analytics, Social Media",
       "icon": "fas fa-list-ol"
@@ -49,9 +70,18 @@
     }
   ],
   "ProjectsPageBurgerText": [
-    { "text": "Κατάσταση: Ολοκληρώθηκε", "icon": "fas fa-info-circle" },
-    { "text": "Κατασκευή: ReactJS & Redux", "icon": "fas fa-tools" },
-    { "text": "Επιπλέον: Google Firebase", "icon": "fas fa-list-ol" }
+    {
+      "text": "Κατάσταση: Ολοκληρώθηκε",
+      "icon": "fas fa-info-circle"
+    },
+    {
+      "text": "Κατασκευή: ReactJS & Redux",
+      "icon": "fas fa-tools"
+    },
+    {
+      "text": "Επιπλέον: Google Firebase",
+      "icon": "fas fa-list-ol"
+    }
   ],
   "WorkPageParagraph": "",
   "WorkPageLaptopTitle": "Επισκευές Η/Υ & Laptop",

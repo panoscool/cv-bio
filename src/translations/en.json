@@ -3,19 +3,31 @@
   "el": "Ελληνικά",
   "NavBarHome": "Home",
   "NavBarAbout": "About",
+  "NavBarSkills": "Skills",
   "NavBarProjects": "Projects",
-  "NavBarWorkTogether": "Work Together",
   "ProjectsPageAtlantisText": [
-    { "text": "Status: Completed", "icon": "fas fa-info-circle" },
-    { "text": "Build with: WordPress", "icon": "fas fa-tools" },
+    {
+      "text": "Status: Completed",
+      "icon": "fas fa-info-circle"
+    },
+    {
+      "text": "Build with: WordPress",
+      "icon": "fas fa-tools"
+    },
     {
       "text": "Additional: Google Analytics, Social Media",
       "icon": "fas fa-list-ol"
     }
   ],
   "ProjectsPageMyaText": [
-    { "text": "Status: Completed", "icon": "fas fa-info-circle" },
-    { "text": "Build with: Shopify", "icon": "fas fa-tools" },
+    {
+      "text": "Status: Completed",
+      "icon": "fas fa-info-circle"
+    },
+    {
+      "text": "Build with: Shopify",
+      "icon": "fas fa-tools"
+    },
     {
       "text": "Additional: Google Analytics, Social Media",
       "icon": "fas fa-list-ol"
@@ -26,7 +38,10 @@
     }
   ],
   "ProjectsPageSloaneText": [
-    { "text": "Build with: Magento", "icon": "fas fa-tools" },
+    {
+      "text": "Build with: Magento",
+      "icon": "fas fa-tools"
+    },
     {
       "text": "Additional: Google Analytics, Social Media",
       "icon": "fas fa-list-ol"
@@ -37,8 +52,14 @@
     }
   ],
   "ProjectsPageYoloText": [
-    { "text": "Status: In progress", "icon": "fas fa-info-circle" },
-    { "text": "Build with: WordPress & WooCommerce", "icon": "fas fa-tools" },
+    {
+      "text": "Status: In progress",
+      "icon": "fas fa-info-circle"
+    },
+    {
+      "text": "Build with: WordPress & WooCommerce",
+      "icon": "fas fa-tools"
+    },
     {
       "text": "Additional: Google Analytics, Social Media",
       "icon": "fas fa-list-ol"
@@ -49,9 +70,18 @@
     }
   ],
   "ProjectsPageBurgerText": [
-    { "text": "Status: Completed", "icon": "fas fa-info-circle" },
-    { "text": "Build with: ReactJS & Redux", "icon": "fas fa-tools" },
-    { "text": "Additional: Google Firebase", "icon": "fas fa-list-ol" }
+    {
+      "text": "Status: Completed",
+      "icon": "fas fa-info-circle"
+    },
+    {
+      "text": "Build with: ReactJS & Redux",
+      "icon": "fas fa-tools"
+    },
+    {
+      "text": "Additional: Google Firebase",
+      "icon": "fas fa-list-ol"
+    }
   ],
   "WorkPageParagraph": " If you're interested in working together contact me on messenger or email.",
   "WorkPageLaptopTitle": "Desktop & Laptop",

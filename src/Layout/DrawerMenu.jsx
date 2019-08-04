@@ -7,10 +7,10 @@ import lang from "../services/lang";
 const DrawerMenu = ({ handleDrawerToggle, pathname }) => {
 
   const navigation = [
-    { to: "/", label: `${lang("NavBarHome")}`, icon: <Home /> },
-    { to: "/about", label: `${lang("NavBarAbout")}`, icon: <Info /> },
-    { to: "/projects", label: `${lang("NavBarProjects")}`, icon: <Pages /> },
-    { to: "/work-together", label: `${lang("NavBarWorkTogether")}`, icon: <Work /> }
+    { to: "/", label: lang("NavBarHome"), icon: <Home /> },
+    { to: "/about", label: lang("NavBarAbout"), icon: <Info /> },
+    { to: "/skills", label: lang("NavBarSkills"), icon: <Work /> },
+    { to: "/projects", label: lang("NavBarProjects"), icon: <Pages /> }
   ];
 
   return (
