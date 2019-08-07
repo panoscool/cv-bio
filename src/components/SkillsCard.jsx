@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const ImgMediaCard = props => {
+function ImgMediaCard(props) {
   const classes = useStyles();
 
   const { title, img, icon, list } = props;
@@ -44,6 +44,6 @@ const ImgMediaCard = props => {
       </CardActionArea>
     </Card>
   );
-};
+}
 
 export default ImgMediaCard;

@@ -3,7 +3,7 @@ import { Grid } from "@material-ui/core";
 import ProjectCard from "../components/ProjectCard";
 import projectsArray from "../data/ProjectsArray";
 
-const FullWidthGrid = () => {
+function FullWidthGrid() {
   return (
     <Grid container spacing={1}>
       {projectsArray.map(obj => (
@@ -13,6 +13,6 @@ const FullWidthGrid = () => {
       ))}
     </Grid>
   );
-};
+}
 
 export default FullWidthGrid;

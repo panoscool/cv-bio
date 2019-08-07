@@ -1,10 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Hidden, Button } from "@material-ui/core";
-import lang from "../services/lang";
+import lang from "../../services/lang";
 
-const NavBarMenu = () => {
-
+function ListMenu() {
   const navigation = [
     { to: "/", label: lang("NavBarHome") },
     { to: "/about", label: lang("NavBarAbout") },
@@ -21,6 +20,6 @@ const NavBarMenu = () => {
       ))}
     </Hidden>
   );
-};
+}
 
-export default NavBarMenu;
+export default ListMenu;

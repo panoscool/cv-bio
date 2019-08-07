@@ -17,7 +17,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const ImgMediaCard = props => {
+function ImgMediaCard(props) {
   const classes = useStyles();
 
   const { img, title, text, live, github, codesandbox, condition } = props;
@@ -58,7 +58,7 @@ const ImgMediaCard = props => {
           <Button
             key={obj.label}
             size="small"
-            color="primary"
+            color="secondary"
             disabled={condition.includes(obj.disabled)}
           >
             <a
@@ -74,6 +74,6 @@ const ImgMediaCard = props => {
       </CardActions>
     </Card>
   );
-};
+}
 
 export default ImgMediaCard;

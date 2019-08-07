@@ -13,7 +13,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const About = props => {
+function About() {
   const classes = useStyles();
 
   return (
@@ -21,6 +21,6 @@ const About = props => {
       <Paper className={classes.paper}>about me</Paper>
     </div>
   );
-};
+}
 
 export default About;

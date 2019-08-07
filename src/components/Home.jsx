@@ -13,7 +13,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const CenteredGrid = () => {
+function CenteredGrid() {
   const classes = useStyles();
 
   const links = [
@@ -41,7 +41,12 @@ const CenteredGrid = () => {
 
           <div className="social-links">
             {links.map(obj => (
-              <a href={obj.href} key={obj.icon} target="_blank" rel="noopener noreferrer">
+              <a
+                href={obj.href}
+                key={obj.icon}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className={obj.icon} aria-hidden="true" />
               </a>
             ))}
@@ -50,6 +55,6 @@ const CenteredGrid = () => {
       </Paper>
     </div>
   );
-};
+}
 
 export default CenteredGrid;

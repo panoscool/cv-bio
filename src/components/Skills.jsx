@@ -23,7 +23,7 @@ const icons = {
   book: <i className="fas fa-book" />
 };
 
-const FullWidthGrid = props => {
+function FullWidthGrid() {
   const classes = useStyles();
 
   const array = [
@@ -64,6 +64,6 @@ const FullWidthGrid = props => {
       </Grid>
     </div>
   );
-};
+}
 
 export default FullWidthGrid;

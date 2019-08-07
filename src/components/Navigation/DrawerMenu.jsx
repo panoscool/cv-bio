@@ -2,10 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { IconButton, MenuList, MenuItem } from "@material-ui/core";
 import { Home, Info, Work, Pages } from "@material-ui/icons";
-import lang from "../services/lang";
+import lang from "../../services/lang";
 
-const DrawerMenu = ({ handleDrawerToggle, pathname }) => {
-
+function DrawerMenu({ handleDrawerToggle, pathname }) {
   const navigation = [
     { to: "/", label: lang("NavBarHome"), icon: <Home /> },
     { to: "/about", label: lang("NavBarAbout"), icon: <Info /> },
@@ -29,6 +28,6 @@ const DrawerMenu = ({ handleDrawerToggle, pathname }) => {
       ))}
     </MenuList>
   );
-};
+}
 
 export default DrawerMenu;
