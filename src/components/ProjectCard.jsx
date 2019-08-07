@@ -45,7 +45,7 @@ function ImgMediaCard(props) {
           </Typography>
           <Typography variant="body2">
             {text.map(obj => (
-              <li className="project-list">
+              <li key={obj.label} className="project-list">
                 <i className={obj.icon} aria-hidden="true" />
                 <span>{obj.text}</span>
               </li>

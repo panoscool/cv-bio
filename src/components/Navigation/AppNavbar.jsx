@@ -23,6 +23,7 @@ const useStyles = makeStyles(theme => ({
     zIndex: theme.zIndex.drawer + 1
   },
   navIconHide: {
+    color: "inherit",
     [theme.breakpoints.up("md")]: {
       display: "none"
     }
@@ -34,7 +35,8 @@ const useStyles = makeStyles(theme => ({
     }
   },
   grow: {
-    flexGrow: 1
+    flexGrow: 1,
+    color: "inherit"
   }
 }));
 
@@ -47,6 +49,8 @@ function AppNavbar({ location: { pathname } }) {
     setMobileOpen(!mobileOpen);
   };
 
+  const styles = { textDecoration: "inherit", color: "inherit" };
+
   return (
     <Fragment>
       <CssBaseline />
@@ -54,23 +58,14 @@ function AppNavbar({ location: { pathname } }) {
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar>
           <IconButton
-            color="inherit"
             aria-label="open drawer"
             onClick={handleDrawerToggle}
             className={classes.navIconHide}
           >
             <Menu />
           </IconButton>
-          <Typography
-            variant="h6"
-            color="inherit"
-            className={classes.grow}
-            noWrap
-          >
-            <Link
-              to="/"
-              style={{ textDecoration: "inherit", color: "inherit" }}
-            >
+          <Typography variant="h6" className={classes.grow} noWrap>
+            <Link to="/" style={styles}>
               <img
                 src="/assets/images/logo.png"
                 alt="PanosCool"
@@ -92,7 +87,7 @@ function AppNavbar({ location: { pathname } }) {
             paper: classes.drawerPaper
           }}
           ModalProps={{
-            keepMounted: true // Better open performance on mobile.
+            keepMounted: true
           }}
         >
           <DrawerMenu

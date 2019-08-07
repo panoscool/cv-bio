@@ -57,8 +57,8 @@ function FullWidthGrid() {
     <div className={classes.root}>
       <Grid container spacing={1}>
         {array.map(obj => (
-          <Grid item xs={12} md={3}>
-            <SkillsCard key={obj.img} {...obj} />
+          <Grid item xs={12} md={3} key={obj.img}>
+            <SkillsCard {...obj} />
           </Grid>
         ))}
       </Grid>

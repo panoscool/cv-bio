@@ -14,7 +14,7 @@ function ListMenu() {
   return (
     <Hidden smDown implementation="css">
       {navigation.map(nav => (
-        <Button key={nav.to} component={Link} to={nav.to}>
+        <Button color="inherit" key={nav.to} component={Link} to={nav.to}>
           {nav.label}
         </Button>
       ))}
