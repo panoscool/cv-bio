@@ -16,38 +16,31 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const icons = {
-  globe: <i className="fas fa-globe" />,
-  laptop: <i className="fas fa-laptop" />,
-  mobile: <i className="fas fa-mobile" />,
-  book: <i className="fas fa-book" />
-};
-
 function FullWidthGrid() {
   const classes = useStyles();
 
   const array = [
     {
       img: "/assets/images/code-icon.jpg",
-      icon: icons.globe,
+      icon: <i className="fas fa-globe" />,
       title: lang("WorkPageWebTitle"),
       list: lang("WorkPageWebList")
     },
     {
       img: "/assets/images/service-icon.jpg",
-      icon: icons.laptop,
+      icon: <i className="fas fa-laptop" />,
       title: lang("WorkPageLaptopTitle"),
       list: lang("WorkPageLaptopRepair")
     },
     {
       img: "/assets/images/update-icon.jpg",
-      icon: icons.mobile,
+      icon: <i className="fas fa-mobile" />,
       title: lang("WorkPageMobileTitle"),
       list: lang("WorkPageMobileRepair")
     },
     {
       img: "/assets/images/learn-icon.jpg",
-      icon: icons.book,
+      icon: <i className="fas fa-book" />,
       title: lang("WorkPageLearningTitle"),
       list: lang("WorkPageLearningList")
     }
