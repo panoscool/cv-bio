@@ -62,6 +62,11 @@
   padding-left: 8px;
 }
 
+.about-line {
+  width: 50%;
+  border-top: 3px solid #673ab7;
+}
+
 @media (max-width: 720px) {
   .banner-text {
     width: 95%;
