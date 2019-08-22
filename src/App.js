@@ -2,13 +2,13 @@ import React from "react";
 import { Route, Switch, withRouter } from "react-router-dom";
 import { Container } from "@material-ui/core";
 
-import Layout from "./Layout";
+import Layout from "./components/Layout";
 import "./App.css";
 
-import Home from "./components/Home";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
+import Home from "./components/HomePage";
+import About from "./components/About/AboutPage";
+import Projects from "./components/Projects/ProjectsPage";
+import Skills from "./components/Skills/SkillsPage";
 
 function App() {
   return (

@@ -1,6 +1,6 @@
 import lang from "../services/lang";
 
-const projects = [
+export default [
   {
     img: "/assets/images/mya-logo.jpg",
     title: "Mya Collection",
@@ -39,5 +39,3 @@ const projects = [
     condition: []
   }
 ];
-
-export default projects;

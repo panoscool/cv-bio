@@ -1,12 +1,12 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
-import ProjectCard from "../components/ProjectCard";
-import projectsArray from "../data/ProjectsArray";
+import ProjectCard from "./ProjectCard";
+import projects from "../../data/projects";
 
 function FullWidthGrid() {
   return (
     <Grid container spacing={1}>
-      {projectsArray.map(obj => (
+      {projects.map(obj => (
         <Grid item xs={12} md={3}>
           <ProjectCard key={obj.title} {...obj} />
         </Grid>

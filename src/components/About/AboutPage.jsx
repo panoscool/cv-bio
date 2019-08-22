@@ -1,6 +1,8 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Paper, Grid } from "@material-ui/core";
+import Resume from "./Resume";
+import resume from "../../data/resume";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -18,7 +20,7 @@ const useStyles = makeStyles(theme => ({
 
 function About() {
   const classes = useStyles();
-
+  console.log(resume);
   return (
     <div className={classes.root}>
       <Paper className={classes.paper}>
@@ -36,9 +38,12 @@ function About() {
             <hr className="about-line" />
           </Grid>
           <Grid item xs={8}>
-            <h2>Experience</h2>
-            <h2>Education</h2>
-            <h2>Skills</h2>
+            {resume.map(obj => (
+              <Fragment>
+                <h2 key={obj.title}>{obj.title}</h2>
+                <Resume {...obj} {...obj.skills} />
+              </Fragment>
+            ))}
           </Grid>
         </Grid>
       </Paper>

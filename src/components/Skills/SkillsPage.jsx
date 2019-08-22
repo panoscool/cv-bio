@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid } from "@material-ui/core";
 import SkillsCard from "./SkillsCard";
-import lang from "../services/lang";
+import lang from "../../services/lang";
 
 const useStyles = makeStyles(theme => ({
   root: {
