@@ -5,85 +5,10 @@
   "NavBarAbout": "About",
   "NavBarSkills": "Skills",
   "NavBarProjects": "Projects",
-  "ProjectsPageAtlantisText": [
-    {
-      "text": "Κατάσταση: Ολοκληρώθηκε",
-      "icon": "fas fa-info-circle"
-    },
-    {
-      "text": "Κατασκευή: WordPress",
-      "icon": "fas fa-tools"
-    },
-    {
-      "text": "Επιπλέον: Google Analytics, Social Media",
-      "icon": "fas fa-list-ol"
-    }
-  ],
-  "ProjectsPageMyaText": [
-    {
-      "text": "Κατάσταση: Ολοκληρώθηκε",
-      "icon": "fas fa-info-circle"
-    },
-    {
-      "text": "Κατασκευή: Shopify",
-      "icon": "fas fa-tools"
-    },
-    {
-      "text": "Επιπλέον: Google Analytics, Social Media",
-      "icon": "fas fa-list-ol"
-    },
-    {
-      "text": "Digital Marketing: Facebook, Instagram",
-      "icon": "fas fa-bullhorn"
-    }
-  ],
-  "ProjectsPageSloaneText": [
-    {
-      "text": "Κατασκευή: Magento",
-      "icon": "fas fa-tools"
-    },
-    {
-      "text": "Επιπλέον: Google Analytics, Social Media",
-      "icon": "fas fa-list-ol"
-    },
-    {
-      "text": "Digital Marketing: Facebook, Instagram",
-      "icon": "fas fa-bullhorn"
-    }
-  ],
-  "ProjectsPageYoloText": [
-    {
-      "text": "Κατάσταση: Υπό κατασκευή",
-      "icon": "fas fa-info-circle"
-    },
-    {
-      "text": "Κατασκευή: WordPress & WooCommerce",
-      "icon": "fas fa-tools"
-    },
-    {
-      "text": "Επιπλέον: Google Analytics, Social Media",
-      "icon": "fas fa-list-ol"
-    },
-    {
-      "text": "Digital Marketing: Facebook, Instagram",
-      "icon": "fas fa-bullhorn"
-    }
-  ],
-  "ProjectsPageBurgerText": [
-    {
-      "text": "Κατάσταση: Ολοκληρώθηκε",
-      "icon": "fas fa-info-circle"
-    },
-    {
-      "text": "Κατασκευή: ReactJS & Redux",
-      "icon": "fas fa-tools"
-    },
-    {
-      "text": "Επιπλέον: Google Firebase",
-      "icon": "fas fa-list-ol"
-    }
-  ],
-  "WorkPageParagraph": "",
+  "ProjectStatusCompleted": "Κατάσταση: Ολοκληρώθηκε",
+  "ProjectStatusInProgress": "Κατάσταση: Υπό κατασκευή",
+  "ProjectBuildWith": "Κατασκευή:",
+  "ProjectExtras": "Επιπλέον:",
   "WorkPageLaptopTitle": "Επισκευές Η/Υ & Laptop",
   "WorkPageLaptopRepair": [
     "Επισκευή",

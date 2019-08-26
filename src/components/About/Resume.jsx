@@ -15,11 +15,16 @@ function Resume(props) {
         {props.showProgress && (
           <Grid item xs={12}>
             <h5>{props.key}</h5>
-            <LinearProgress
-              color="secondary"
-              variant="determinate"
-              value={props.progress}
-            />
+            {props.skills.map(obj => (
+              <div syle={{ display: "flex" }}>
+                <h4>{obj.key}</h4>
+                <LinearProgress
+                  color="secondary"
+                  variant="determinate"
+                  value={obj.progress}
+                />
+              </div>
+            ))}
           </Grid>
         )}
       </Grid>

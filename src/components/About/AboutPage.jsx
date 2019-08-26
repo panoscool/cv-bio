@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
 
 function About() {
   const classes = useStyles();
-  console.log(resume);
+
   return (
     <div className={classes.root}>
       <Paper className={classes.paper}>
@@ -41,7 +41,7 @@ function About() {
             {resume.map(obj => (
               <Fragment>
                 <h2 key={obj.title}>{obj.title}</h2>
-                <Resume {...obj} {...obj.skills} />
+                <Resume {...obj} />
               </Fragment>
             ))}
           </Grid>

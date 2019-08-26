@@ -21,24 +21,28 @@ function FullWidthGrid() {
 
   const array = [
     {
+      id: 1,
       img: "/assets/images/code-icon.jpg",
       icon: <i className="fas fa-globe" />,
       title: lang("WorkPageWebTitle"),
       list: lang("WorkPageWebList")
     },
     {
+      id: 2,
       img: "/assets/images/service-icon.jpg",
       icon: <i className="fas fa-laptop" />,
       title: lang("WorkPageLaptopTitle"),
       list: lang("WorkPageLaptopRepair")
     },
     {
+      id: 3,
       img: "/assets/images/update-icon.jpg",
       icon: <i className="fas fa-mobile" />,
       title: lang("WorkPageMobileTitle"),
       list: lang("WorkPageMobileRepair")
     },
     {
+      id: 4,
       img: "/assets/images/learn-icon.jpg",
       icon: <i className="fas fa-book" />,
       title: lang("WorkPageLearningTitle"),
@@ -50,7 +54,7 @@ function FullWidthGrid() {
     <div className={classes.root}>
       <Grid container spacing={1}>
         {array.map(obj => (
-          <Grid item xs={12} md={3} key={obj.img}>
+          <Grid item xs={12} md={3} key={obj.id}>
             <SkillsCard {...obj} />
           </Grid>
         ))}
