@@ -3,7 +3,6 @@ import { Route, Switch, withRouter } from "react-router-dom";
 import { Container } from "@material-ui/core";
 
 import Layout from "./components/Layout";
-import "./App.css";
 
 import Home from "./components/HomePage";
 import About from "./components/About/AboutPage";

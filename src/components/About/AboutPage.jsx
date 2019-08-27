@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Paper, Grid } from "@material-ui/core";
 import Resume from "./Resume";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 import resume from "../../data/resume";
 
 const useStyles = makeStyles(theme => ({
@@ -20,6 +21,7 @@ const useStyles = makeStyles(theme => ({
 
 function About() {
   const classes = useStyles();
+  const { width } = useWindowDimensions();
 
   return (
     <div className={classes.root}>
@@ -37,7 +39,7 @@ function About() {
             <h4>Front End Developer</h4>
             <hr className="about-line" />
           </Grid>
-          <Grid item xs={8}>
+          <Grid item xs={width > 960 ? 8 : 12}>
             {resume.map(obj => (
               <Fragment>
                 <h2 key={obj.title}>{obj.title}</h2>

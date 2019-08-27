@@ -13,7 +13,7 @@ const theme = createMuiTheme({
     }
   },
   typography: {
-    fontFamily: "Helvetica Neue, sans-serif"
+    fontFamily: "Helvetica Neue, Roboto, sans-serif"
   }
 });
 

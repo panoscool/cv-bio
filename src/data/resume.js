@@ -2,29 +2,33 @@ import lang from "../services/lang";
 
 export default [
   {
-    title: "Experience",
+    title: lang("AboutPageExperience"),
     subtitle: "some title",
     year: "2017 - 2019",
     description: "some description"
   },
   {
-    title: "Education",
+    title: lang("AboutPageEducation"),
     subtitle: "some title",
     year: "2017 - 2019",
     description: "some description"
   },
   {
-    title: "Certificates",
+    title: lang("AboutPageCertificates"),
     subtitle: "some title",
     year: "2017 - 2019",
     description: "some description"
   },
   {
-    title: "Skills",
+    title: lang("AboutPageCertificates"),
     showProgress: true,
     skills: [
-      { key: "JavaScript", progress: 35 },
-      { key: "HTML/CSS", progress: 85 }
+      { label: "React", progress: 85 },
+      { label: "HTML/CSS", progress: 65 },
+      { label: "Material-UI", progress: 55 },
+      { label: "Bootstrap", progress: 60 },
+      { label: "JavaScript", progress: 45 },
+      { label: "Git", progress: 50 }
     ]
   }
 ];

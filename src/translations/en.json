@@ -5,6 +5,10 @@
   "NavBarAbout": "About",
   "NavBarSkills": "Skills",
   "NavBarProjects": "Projects",
+  "AboutPageExperience": "Experience",
+  "AboutPageEducation": "Education",
+  "AboutPageCertificates": "Certificates",
+  "AboutPageSkills": "Skills",
   "ProjectStatusCompleted": "Status: Completed",
   "ProjectStatusInProgress": "Status: In progress",
   "ProjectBuildWith": "Build with:",
@@ -35,7 +39,7 @@
     "Social media integration",
     "Digital marketing (Google Ads, Facebook / Instagram Ads, Bing Ads)"
   ],
-  "WorkPageLearningTitle": "Computer Learning",
+  "WorkPageLearningTitle": "Computer Lessons",
   "WorkPageLearningList": [
     "Internet / Email",
     "Microsoft Office (Word, Excel, PowerPoint, Outlook)",
