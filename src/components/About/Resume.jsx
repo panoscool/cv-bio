@@ -19,7 +19,7 @@ function Resume(props) {
         {props.showProgress && (
           <Grid item xs={12}>
             {props.skills.map(obj => (
-              <div>
+              <div key={obj.label}>
                 <h4>{obj.label}</h4>
                 <LinearProgress
                   color="secondary"

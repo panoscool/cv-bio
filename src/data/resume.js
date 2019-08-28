@@ -20,7 +20,7 @@ export default [
     description: "some description"
   },
   {
-    title: lang("AboutPageCertificates"),
+    title: lang("AboutPageSkills"),
     showProgress: true,
     skills: [
       { label: "React", progress: 85 },

@@ -1,15 +1,11 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Paper } from "@material-ui/core";
+import Page from "./Layout/Page";
 
 const useStyles = makeStyles(theme => ({
   root: {
-    flexGrow: 1
-  },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: "center",
-    color: theme.palette.text.secondary
+    flexGrow: 1,
+    textAlign: "center"
   }
 }));
 
@@ -24,7 +20,7 @@ function CenteredGrid() {
 
   return (
     <div className={classes.root}>
-      <Paper className={classes.paper}>
+      <Page>
         <img
           src="/assets/images/avatar.png"
           alt="avatar"
@@ -52,7 +48,7 @@ function CenteredGrid() {
             ))}
           </div>
         </div>
-      </Paper>
+      </Page>
     </div>
   );
 }

@@ -1,18 +1,14 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Paper, Grid } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 import Resume from "./Resume";
+import Page from "../Layout/Page";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import resume from "../../data/resume";
 
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1
-  },
-  paper: {
-    padding: theme.spacing(2),
-    marginBottom: 16,
-    color: theme.palette.text.secondary
   },
   namePadding: {
     paddingTop: "2em"
@@ -25,9 +21,9 @@ function About() {
 
   return (
     <div className={classes.root}>
-      <Paper className={classes.paper}>
+      <Page>
         <Grid container spacing={2}>
-          <Grid item xs={4}>
+          <Grid item xs={width > 960 ? 4 : 12}>
             <div style={{ textAlign: "center" }}>
               <img
                 src="/assets/images/avatar.png"
@@ -41,14 +37,14 @@ function About() {
           </Grid>
           <Grid item xs={width > 960 ? 8 : 12}>
             {resume.map(obj => (
-              <Fragment>
-                <h2 key={obj.title}>{obj.title}</h2>
+              <div key={obj.title}>
+                <h2>{obj.title}</h2>
                 <Resume {...obj} />
-              </Fragment>
+              </div>
             ))}
           </Grid>
         </Grid>
-      </Paper>
+      </Page>
     </div>
   );
 }

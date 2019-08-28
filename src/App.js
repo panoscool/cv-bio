@@ -1,8 +1,7 @@
 import React from "react";
 import { Route, Switch, withRouter } from "react-router-dom";
-import { Container } from "@material-ui/core";
 
-import Layout from "./components/Layout";
+import Layout from "./components/Layout/PageLayout";
 
 import Home from "./components/HomePage";
 import About from "./components/About/AboutPage";
@@ -12,14 +11,12 @@ import Skills from "./components/Skills/SkillsPage";
 function App() {
   return (
     <Layout>
-      <Container maxWidth="xl">
-        <Switch>
-          <Route path="/skills" component={Skills} />
-          <Route path="/projects" component={Projects} />
-          <Route path="/about" component={About} />
-          <Route path="/" component={Home} />
-        </Switch>
-      </Container>
+      <Switch>
+        <Route path="/skills" component={Skills} />
+        <Route path="/projects" component={Projects} />
+        <Route path="/about" component={About} />
+        <Route path="/" component={Home} />
+      </Switch>
     </Layout>
   );
 }
