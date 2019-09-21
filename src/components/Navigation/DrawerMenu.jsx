@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { IconButton, MenuList, MenuItem } from "@material-ui/core";
 import { Home, Info, Work, Pages } from "@material-ui/icons";
-import lang from "../../services/lang";
+import { LanguageContext } from "../../LanguageContext";
 
 function DrawerMenu({ handleDrawerToggle, pathname }) {
+  const { lang } = useContext(LanguageContext);
+
   const navigation = [
     { to: "/", label: lang("NavBarHome"), icon: <Home /> },
     { to: "/about", label: lang("NavBarAbout"), icon: <Info /> },

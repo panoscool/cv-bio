@@ -7,6 +7,7 @@ import { LanguageContext } from "../../LanguageContext";
 
 function MenuLinks() {
   const { lang } = useContext(LanguageContext);
+
   const navigation = [
     { to: "/", label: lang("NavBarHome") },
     { to: "/about", label: lang("NavBarAbout") },
