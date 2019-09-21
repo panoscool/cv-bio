@@ -28,6 +28,10 @@ export default [
     title: "Sloane Boutique",
     text: [
       {
+        text: "Completed",
+        icon: "fas fa-info-circle"
+      },
+      {
         text: "Magento",
         icon: "fas fa-tools"
       },
@@ -48,7 +52,7 @@ export default [
     title: "Atlantis Shine",
     text: [
       {
-        tex: "Completed",
+        text: "Completed",
         icon: "fas fa-info-circle"
       },
       {
@@ -68,7 +72,7 @@ export default [
     title: "Yolo Fashions",
     text: [
       {
-        tex: "InProgress",
+        text: "InProgress",
         icon: "fas fa-info-circle"
       },
       {
@@ -92,7 +96,7 @@ export default [
     title: "Burger Builder",
     text: [
       {
-        tex: "Completed",
+        text: "Completed",
         icon: "fas fa-info-circle"
       },
       {
