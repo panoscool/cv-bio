@@ -1,13 +1,9 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useContext } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
-import lang, {
-  getLanguage,
-  setLanguage,
-  getLanguageList
-} from "../../services/lang";
+import { LanguageContext } from "../../LanguageContext";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -19,6 +15,9 @@ const useStyles = makeStyles(theme => ({
 
 function LanguageSwitcher() {
   const classes = useStyles();
+  const { lang, language, languages, setLanguage } = useContext(
+    LanguageContext
+  );
   const [anchorEl, setAnchorEl] = useState(null);
 
   const handleMenu = event => {
@@ -29,9 +28,13 @@ function LanguageSwitcher() {
     setAnchorEl(null);
   };
 
+  const handleLanguage = lg => {
+    setLanguage(lg);
+    handleClose();
+    localStorage.setItem("panos_language", lg);
+  };
+
   const open = Boolean(anchorEl);
-  const language = getLanguage();
-  const languages = getLanguageList();
 
   return (
     <Fragment>
@@ -49,8 +52,8 @@ function LanguageSwitcher() {
         open={open}
         onClose={handleClose}
       >
-        {languages.map(lg => (
-          <MenuItem onClick={() => setLanguage(lg)} key={lg}>
+        {languages().map(lg => (
+          <MenuItem onClick={() => handleLanguage(lg)} key={lg}>
             {language === lg ? "-" : ""} {lang(lg).toUpperCase()}
           </MenuItem>
         ))}

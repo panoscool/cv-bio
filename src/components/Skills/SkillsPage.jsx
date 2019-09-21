@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid } from "@material-ui/core";
 import SkillsCard from "./SkillsCard";
-import lang from "../../services/lang";
+import { LanguageContext } from "../../LanguageContext";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -18,6 +18,7 @@ const useStyles = makeStyles(theme => ({
 
 function FullWidthGrid() {
   const classes = useStyles();
+  const { lang } = useContext(LanguageContext);
 
   const array = [
     {

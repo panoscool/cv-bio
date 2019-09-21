@@ -4,14 +4,17 @@ import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "@material-ui/styles";
 import "./index.css";
 import App from "./App";
+import LanguageProvider from "./LanguageContext";
 import theme from "./theme";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <BrowserRouter>
-    <ThemeProvider theme={theme}>
-      <App />
-    </ThemeProvider>
+    <LanguageProvider>
+      <ThemeProvider theme={theme}>
+        <App />
+      </ThemeProvider>
+    </LanguageProvider>
   </BrowserRouter>,
   document.getElementById("root")
 );
