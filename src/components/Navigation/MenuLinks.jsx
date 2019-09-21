@@ -18,7 +18,9 @@ function MenuLinks() {
   ];
 
   const toggleThemeMode = () => {
-    setTheme(theme === "light" ? "dark" : "light");
+    const themeMode = theme === "light" ? "dark" : "light";
+    setTheme(themeMode);
+    localStorage.setItem("panos_theme", themeMode);
   };
 
   return (
