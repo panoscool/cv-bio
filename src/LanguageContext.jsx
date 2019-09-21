@@ -7,7 +7,7 @@ export const LanguageContext = createContext({
   setLanguage: () => {}
 });
 
-export default props => {
+export default ({ children }) => {
   const [language, setLanguage] = useState(
     localStorage.getItem("panos_language") || "en"
   );
@@ -45,7 +45,7 @@ export default props => {
         setLanguage: setLanguage
       }}
     >
-      {props.children}
+      {children}
     </LanguageContext.Provider>
   );
 };

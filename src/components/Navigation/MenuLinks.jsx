@@ -4,9 +4,11 @@ import { Hidden, Button, IconButton, Tooltip } from "@material-ui/core";
 import { WbSunny } from "@material-ui/icons";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { LanguageContext } from "../../LanguageContext";
+import { ThemeContext } from "../../ThemeContext";
 
 function MenuLinks() {
   const { lang } = useContext(LanguageContext);
+  const { theme, setTheme } = useContext(ThemeContext);
 
   const navigation = [
     { to: "/", label: lang("NavBarHome") },
@@ -14,6 +16,10 @@ function MenuLinks() {
     { to: "/skills", label: lang("NavBarSkills") },
     { to: "/projects", label: lang("NavBarProjects") }
   ];
+
+  const toggleThemeMode = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
 
   return (
     <Fragment>
@@ -26,7 +32,7 @@ function MenuLinks() {
       </Hidden>
       <LanguageSwitcher />
       <Tooltip title="Toggle light/dark theme">
-        <IconButton aria-label="toggle">
+        <IconButton onClick={toggleThemeMode} aria-label="toggle">
           <WbSunny color="inherit" />
         </IconButton>
       </Tooltip>

@@ -1,26 +1,24 @@
-import lang from "../services/lang";
-
 export default [
   {
-    title: lang("AboutPageExperience"),
+    title: "AboutPageExperience",
     subtitle: "some title",
     year: "2017 - 2019",
     description: "some description"
   },
   {
-    title: lang("AboutPageEducation"),
+    title: "AboutPageEducation",
     subtitle: "some title",
     year: "2017 - 2019",
     description: "some description"
   },
   {
-    title: lang("AboutPageCertificates"),
+    title: "AboutPageCertificates",
     subtitle: "some title",
     year: "2017 - 2019",
     description: "some description"
   },
   {
-    title: lang("AboutPageSkills"),
+    title: "AboutPageSkills",
     showProgress: true,
     skills: [
       { label: "React", progress: 85 },

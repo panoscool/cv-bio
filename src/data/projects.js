@@ -1,20 +1,18 @@
-import lang from "../services/lang";
-
 export default [
   {
     img: "/assets/images/mya-logo.jpg",
     title: "Mya Collection",
     text: [
       {
-        text: lang("ProjectStatusCompleted"),
+        text: "Completed",
         icon: "fas fa-info-circle"
       },
       {
-        text: `${lang("ProjectBuildWith")} Shopify`,
+        text: "Shopify",
         icon: "fas fa-tools"
       },
       {
-        text: `${lang("ProjectExtras")} Google Analytics, Social Media`,
+        text: "Google Analytics, Social Media",
         icon: "fas fa-list-ol"
       },
       {
@@ -30,11 +28,11 @@ export default [
     title: "Sloane Boutique",
     text: [
       {
-        text: `${lang("ProjectBuildWith")} Magento`,
+        text: "Magento",
         icon: "fas fa-tools"
       },
       {
-        text: `${lang("ProjectExtras")} Google Analytics, Social Media`,
+        text: "Google Analytics, Social Media",
         icon: "fas fa-list-ol"
       },
       {
@@ -50,15 +48,15 @@ export default [
     title: "Atlantis Shine",
     text: [
       {
-        text: lang("ProjectStatusCompleted"),
+        tex: "Completed",
         icon: "fas fa-info-circle"
       },
       {
-        text: `${lang("ProjectBuildWith")} WordPress`,
+        text: "WordPress",
         icon: "fas fa-tools"
       },
       {
-        text: `${lang("ProjectExtras")} Google Analytics, Social Media`,
+        text: "Google Analytics, Social Media",
         icon: "fas fa-list-ol"
       }
     ],
@@ -70,15 +68,15 @@ export default [
     title: "Yolo Fashions",
     text: [
       {
-        text: lang("ProjectStatusInProgress"),
+        tex: "InProgress",
         icon: "fas fa-info-circle"
       },
       {
-        text: `${lang("ProjectBuildWith")} WordPress & WooCommerce`,
+        text: "WordPress & WooCommerce",
         icon: "fas fa-tools"
       },
       {
-        text: `${lang("ProjectExtras")} Google Analytics, Social Media`,
+        text: "Google Analytics, Social Media",
         icon: "fas fa-list-ol"
       },
       {
@@ -94,15 +92,15 @@ export default [
     title: "Burger Builder",
     text: [
       {
-        text: lang("ProjectStatusCompleted"),
+        tex: "Completed",
         icon: "fas fa-info-circle"
       },
       {
-        text: `${lang("ProjectBuildWith")} ReactJS & Redux`,
+        text: "ReactJS & Redux",
         icon: "fas fa-tools"
       },
       {
-        text: `${lang("ProjectExtras")} Google Firebase`,
+        text: "Google Firebase",
         icon: "fas fa-list-ol"
       }
     ],
