@@ -28,10 +28,6 @@ export default [
     title: "Sloane Boutique",
     text: [
       {
-        text: "Completed",
-        icon: "fas fa-info-circle"
-      },
-      {
         text: "Magento",
         icon: "fas fa-tools"
       },
@@ -45,6 +41,26 @@ export default [
       }
     ],
     live: "https://sloaneboutique.gr/",
+    condition: ["github", "codesandbox"]
+  },
+  {
+    img: "/assets/images/sloane-logo.jpg",
+    title: "Ozar",
+    text: [
+      {
+        text: "WordPress / WooCommerce",
+        icon: "fas fa-tools"
+      },
+      {
+        text: "Google Analytics, Social Media",
+        icon: "fas fa-list-ol"
+      },
+      {
+        text: "Digital Marketing: Facebook, Instagram",
+        icon: "fas fa-bullhorn"
+      }
+    ],
+    live: "https://ozarjewells.com/",
     condition: ["github", "codesandbox"]
   },
   {
@@ -72,11 +88,11 @@ export default [
     title: "Yolo Fashions",
     text: [
       {
-        text: "InProgress",
+        text: "In progress",
         icon: "fas fa-info-circle"
       },
       {
-        text: "WordPress & WooCommerce",
+        text: "WordPress / WooCommerce",
         icon: "fas fa-tools"
       },
       {
