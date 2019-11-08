@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
 function ImgMediaCard(props) {
   const classes = useStyles();
 
-  const { img, title, text, live, github, codesandbox, condition } = props;
+  const { img, title, infos, live, github, codesandbox, condition } = props;
 
   const buttons = [
     { disabled: "github", href: github, label: "GitHub" },
@@ -44,8 +44,8 @@ function ImgMediaCard(props) {
             {title}
           </Typography>
           <Typography variant="body2">
-            {text.map(obj => (
-              <li key={obj.label} className="project-list">
+            {infos.map((obj, index) => (
+              <li key={index} className="project-list">
                 <i className={obj.icon} aria-hidden="true" />
                 <span>{obj.text}</span>
               </li>
@@ -54,9 +54,9 @@ function ImgMediaCard(props) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        {buttons.map(obj => (
+        {buttons.map((obj, index) => (
           <Button
-            key={obj.label}
+            key={index}
             size="small"
             color="secondary"
             disabled={condition.includes(obj.disabled)}

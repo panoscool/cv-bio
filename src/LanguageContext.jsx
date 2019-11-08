@@ -3,8 +3,8 @@ import en from "./translations/en.json";
 import el from "./translations/el.json";
 
 export const LanguageContext = createContext({
-  lang: () => {},
-  setLanguage: () => {}
+  lang: () => { },
+  setLanguage: () => { }
 });
 
 export default ({ children }) => {
@@ -16,22 +16,17 @@ export default ({ children }) => {
 
   const getLanguageList = () => Object.keys(translations);
 
-  function lang(...args) {
+  function lang(translationKey) {
     const translation = translations[language];
 
-    const key = String(args.shift());
-    let output = translation[key];
+    let output = translation[translationKey];
 
     if (!translation || !output) {
-      return key
+      return translationKey
         .replace(/([A-Z])/g, " $1")
         .trim()
         .toUpperCase();
     }
-
-    args.forEach(arg => {
-      output = output.replace(/\{([^}]+)\}/, arg);
-    });
 
     return output;
   }

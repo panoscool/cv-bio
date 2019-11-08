@@ -1,8 +1,11 @@
+import uuid from 'uuid';
+
 export default [
   {
+    id: uuid.v4(),
     img: "/assets/images/mya-logo.jpg",
     title: "Mya Collection",
-    text: [
+    infos: [
       {
         text: "Completed",
         icon: "fas fa-info-circle"
@@ -24,13 +27,10 @@ export default [
     condition: ["github", "codesandbox"]
   },
   {
+    id: uuid.v4(),
     img: "/assets/images/sloane-logo.jpg",
     title: "Sloane Boutique",
-    text: [
-      {
-        text: "Completed",
-        icon: "fas fa-info-circle"
-      },
+    infos: [
       {
         text: "Magento",
         icon: "fas fa-tools"
@@ -48,9 +48,31 @@ export default [
     condition: ["github", "codesandbox"]
   },
   {
+    id: uuid.v4(),
+    img: "/assets/images/ozar-logo.jpg",
+    title: "Ozar",
+    infos: [
+      {
+        text: "WordPress / WooCommerce",
+        icon: "fas fa-tools"
+      },
+      {
+        text: "Google Analytics, Social Media",
+        icon: "fas fa-list-ol"
+      },
+      {
+        text: "Digital Marketing: Facebook, Instagram",
+        icon: "fas fa-bullhorn"
+      }
+    ],
+    live: "https://ozarjewells.com/",
+    condition: ["github", "codesandbox"]
+  },
+  {
+    id: uuid.v4(),
     img: "/assets/images/atlantis-logo.jpg",
     title: "Atlantis Shine",
-    text: [
+    infos: [
       {
         text: "Completed",
         icon: "fas fa-info-circle"
@@ -68,15 +90,16 @@ export default [
     condition: ["github", "codesandbox"]
   },
   {
+    id: uuid.v4(),
     img: "/assets/images/yolo-logo.jpg",
     title: "Yolo Fashions",
-    text: [
+    infos: [
       {
-        text: "InProgress",
+        text: "In progress",
         icon: "fas fa-info-circle"
       },
       {
-        text: "WordPress & WooCommerce",
+        text: "WordPress / WooCommerce",
         icon: "fas fa-tools"
       },
       {
@@ -92,9 +115,10 @@ export default [
     condition: ["github", "codesandbox"]
   },
   {
+    id: uuid.v4(),
     img: "/assets/images/burger-logo.jpg",
     title: "Burger Builder",
-    text: [
+    infos: [
       {
         text: "Completed",
         icon: "fas fa-info-circle"

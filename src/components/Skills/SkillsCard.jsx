@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import {
   Card,
@@ -7,6 +7,7 @@ import {
   CardMedia,
   Typography
 } from "@material-ui/core";
+import { LanguageContext } from "../../LanguageContext";
 
 const useStyles = makeStyles(theme => ({
   media: {
@@ -17,6 +18,7 @@ const useStyles = makeStyles(theme => ({
 
 function ImgMediaCard(props) {
   const classes = useStyles();
+  const { lang } = useContext(LanguageContext);
 
   const { title, img, icon, list } = props;
 
@@ -25,18 +27,18 @@ function ImgMediaCard(props) {
       <CardActionArea>
         <CardMedia
           component="img"
-          alt={title}
+          alt={lang(title)}
           height="140"
           image={img}
-          title={title}
+          title={lang(title)}
           className={classes.media}
         />
         <CardContent>
           <Typography gutterBottom variant="h6">
-            {icon} {title}
+            <i className={icon} aria-hidden="true" /> {lang(title)}
           </Typography>
           <Typography variant="body2">
-            {list.map((item, index) => {
+            {lang(list).map((item, index) => {
               return <li key={index}>{item}</li>;
             })}
           </Typography>

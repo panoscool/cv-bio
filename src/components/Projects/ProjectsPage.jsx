@@ -7,8 +7,8 @@ function FullWidthGrid() {
   return (
     <Grid container spacing={1}>
       {projects.map(obj => (
-        <Grid item xs={12} md={3}>
-          <ProjectCard key={obj.title} {...obj} />
+        <Grid item xs={12} md={3} key={obj.id}>
+          <ProjectCard {...obj} />
         </Grid>
       ))}
     </Grid>
