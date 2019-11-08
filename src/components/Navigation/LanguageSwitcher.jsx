@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
-import { LanguageContext } from "../../LanguageContext";
+import { LanguageContext } from "../../context/LanguageContext";
 
 const useStyles = makeStyles(theme => ({
   root: {

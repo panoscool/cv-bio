@@ -15,34 +15,26 @@ function CenteredGrid() {
   const links = [
     { href: "https://www.linkedin.com/in/lkullolli/", icon: "fab fa-linkedin" },
     { href: "https://github.com/panoscool", icon: "fab fa-github-square" },
-    { href: "https://facebook.com", icon: "fab fa-facebook" }
+    { href: "https://www.facebook.com/panos.cool1", icon: "fab fa-facebook-square" },
+    { href: "https://www.instagram.com/panoscool_/", icon: "fab fa-instagram" }
   ];
 
   return (
     <div className={classes.root}>
       <Page>
-        <img
-          src="/assets/images/avatar.png"
-          alt="avatar"
-          className="avatar-img"
-        />
+        <img src="/assets/images/avatar.png" alt="avatar" className="avatar-img" />
         <div className="banner-text">
           <h1>Front End Developer</h1>
 
           <hr />
 
           <p>
-            HTML/CSS | Bootstrap | JavaScript | React | Material-UI | WordPress
+            HTML/CSS | JavaScript | React | Redux | Material-UI | Bootstrap | WordPress
           </p>
 
           <div className="social-links">
             {links.map(obj => (
-              <a
-                href={obj.href}
-                key={obj.icon}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href={obj.href} key={obj.icon} target="_blank" rel="noopener noreferrer">
                 <i className={obj.icon} aria-hidden="true" />
               </a>
             ))}

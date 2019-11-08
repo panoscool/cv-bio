@@ -1,8 +1,13 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import { IconButton, MenuList, MenuItem } from "@material-ui/core";
-import { Home, Info, Work, Pages } from "@material-ui/icons";
-import { LanguageContext } from "../../LanguageContext";
+import IconButton from "@material-ui/core/IconButton";
+import MenuList from "@material-ui/core/MenuList";
+import MenuItem from "@material-ui/core/MenuItem";
+import Home from "@material-ui/icons/Home";
+import Info from "@material-ui/icons/Info";
+import Work from "@material-ui/icons/Work";
+import Pages from "@material-ui/icons/Pages";
+import { LanguageContext } from "../../context/LanguageContext";
 
 function DrawerMenu({ handleDrawerToggle, pathname }) {
   const { lang } = useContext(LanguageContext);

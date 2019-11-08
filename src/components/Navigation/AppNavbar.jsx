@@ -1,16 +1,14 @@
 import React, { Fragment, useState } from "react";
 import { Link, withRouter } from "react-router-dom";
-import {
-  AppBar,
-  Toolbar,
-  IconButton,
-  Typography,
-  Hidden,
-  Drawer,
-  CssBaseline
-} from "@material-ui/core";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import IconButton from "@material-ui/core/IconButton";
+import Typography from "@material-ui/core/Typography";
+import Hidden from "@material-ui/core/Hidden";
+import Drawer from "@material-ui/core/Drawer";
+import CssBaseline from "@material-ui/core/CssBaseline";
 import { makeStyles } from "@material-ui/core/styles";
-import { Menu } from "@material-ui/icons";
+import Menu from "@material-ui/icons/Menu";
 import MenuLinks from "./MenuLinks";
 import DrawerMenu from "./DrawerMenu";
 
@@ -80,8 +78,8 @@ function AppNavbar({ location: { pathname } }) {
                   height="35px"
                 />
               ) : (
-                <span>Panos K.</span>
-              )}
+                  <span>Panos K.</span>
+                )}
             </Link>
           </Typography>
           <MenuLinks />

@@ -3,8 +3,8 @@ import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App";
-import LanguageProvider from "./LanguageContext";
-import ThemeContext from "./ThemeContext";
+import LanguageProvider from "./context/LanguageContext";
+import ThemeContext from "./context/ThemeContext";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(

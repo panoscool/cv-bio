@@ -1,10 +1,13 @@
 import React, { Fragment, useContext } from "react";
 import { Link } from "react-router-dom";
-import { Hidden, Button, IconButton, Tooltip } from "@material-ui/core";
-import { WbSunny } from "@material-ui/icons";
+import Hidden from "@material-ui/core/Hidden";
+import Button from "@material-ui/core/Button";
+import IconButton from "@material-ui/core/IconButton";
+import Tooltip from "@material-ui/core/Tooltip";
+import WbSunny from "@material-ui/icons/WbSunny";
 import LanguageSwitcher from "./LanguageSwitcher";
-import { LanguageContext } from "../../LanguageContext";
-import { ThemeContext } from "../../ThemeContext";
+import { LanguageContext } from "../../context/LanguageContext";
+import { ThemeContext } from "../../context/ThemeContext";
 
 function MenuLinks() {
   const { lang } = useContext(LanguageContext);
