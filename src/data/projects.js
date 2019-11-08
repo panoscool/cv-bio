@@ -65,7 +65,7 @@ export default [
         icon: "fas fa-bullhorn"
       }
     ],
-    live: "https://ozarjewells.com/",
+    live: "https://www.ozarjewels.com/",
     condition: ["github", "codesandbox"]
   },
   {
