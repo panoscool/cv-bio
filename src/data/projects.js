@@ -50,7 +50,7 @@ export default [
   {
     id: uuid.v4(),
     img: "/assets/images/ozar-logo.jpg",
-    title: "Ozar",
+    title: "Ozar World",
     infos: [
       {
         text: "WordPress / WooCommerce",
