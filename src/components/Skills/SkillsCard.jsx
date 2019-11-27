@@ -8,29 +8,25 @@ import Typography from "@material-ui/core/Typography";
 import { LanguageContext } from "../../context/LanguageContext";
 
 const useStyles = makeStyles(theme => ({
+  card: {
+    width: 'auto',
+  },
   media: {
-    height: "auto",
-    objectFit: "fill"
-  }
+    height: 0,
+    paddingTop: '56.25%', // 16:9
+  },
 }));
 
-function ImgMediaCard(props) {
+function SkillsCard(props) {
   const classes = useStyles();
   const { lang } = useContext(LanguageContext);
 
   const { title, img, icon, list } = props;
 
   return (
-    <Card className="card">
+    <Card className={classes.card}>
       <CardActionArea>
-        <CardMedia
-          component="img"
-          alt={lang(title)}
-          height="140"
-          image={img}
-          title={lang(title)}
-          className={classes.media}
-        />
+        <CardMedia image={img} className={classes.media} />
         <CardContent>
           <Typography gutterBottom variant="h6">
             <i className={icon} aria-hidden="true" /> {lang(title)}
@@ -46,4 +42,4 @@ function ImgMediaCard(props) {
   );
 }
 
-export default ImgMediaCard;
+export default SkillsCard;

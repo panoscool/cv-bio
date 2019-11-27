@@ -1,21 +1,23 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import Card from "@material-ui/core/Card";
-import CardActionArea from "@material-ui/core/CardActionArea";
-import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
-import CardMedia from "@material-ui/core/CardMedia";
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
 import Button from "@material-ui/core/Button";
-import Typography from "@material-ui/core/Typography";
+import Card from '@material-ui/core/Card';
+import CardMedia from '@material-ui/core/CardMedia';
+import CardContent from '@material-ui/core/CardContent';
+import CardActions from '@material-ui/core/CardActions';
+import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles(theme => ({
+  card: {
+    width: 'auto',
+  },
   media: {
-    height: "auto",
-    objectFit: "fill"
-  }
+    height: 0,
+    paddingTop: '56.25%', // 16:9
+  },
 }));
 
-function ImgMediaCard(props) {
+function ProjectCard(props) {
   const classes = useStyles();
 
   const { img, title, infos, live, github, codesandbox, condition } = props;
@@ -27,31 +29,22 @@ function ImgMediaCard(props) {
   ];
 
   return (
-    <Card className="card">
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image={img}
-          alt={title}
-          title={title}
-          className={classes.media}
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h6">
-            {title}
-          </Typography>
-          <Typography variant="body2">
-            {infos.map((obj, index) => (
-              <li key={index} className="project-list">
-                <i className={obj.icon} aria-hidden="true" />
-                <span>{obj.text}</span>
-              </li>
-            ))}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
+    <Card className={classes.card}>
+      <CardMedia className={classes.media} image={img} />
+      <CardContent>
+        <Typography gutterBottom variant="h6">
+          {title}
+        </Typography>
+        <Typography variant="body2">
+          {infos.map((obj, index) => (
+            <li key={index} className="project-list">
+              <i className={obj.icon} aria-hidden="true" />
+              <span>{obj.text}</span>
+            </li>
+          ))}
+        </Typography>
+      </CardContent>
+      <CardActions disableSpacing>
         {buttons.map((obj, index) => (
           <Button
             key={index}
@@ -74,4 +67,4 @@ function ImgMediaCard(props) {
   );
 }
 
-export default ImgMediaCard;
+export default ProjectCard;

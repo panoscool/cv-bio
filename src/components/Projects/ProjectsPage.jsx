@@ -1,6 +1,6 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from './ProjectCard';
 import projects from "../../data/projects";
 
 function FullWidthGrid() {
