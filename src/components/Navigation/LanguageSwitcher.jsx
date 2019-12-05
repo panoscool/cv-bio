@@ -10,6 +10,9 @@ const useStyles = makeStyles(theme => ({
     border: "none",
     borderRadius: "none",
     color: "inherit"
+  },
+  activeMenuItem: {
+    fontWeight: 'bold',
   }
 }));
 
@@ -53,8 +56,8 @@ function LanguageSwitcher() {
         onClose={handleClose}
       >
         {languages().map(lg => (
-          <MenuItem onClick={() => handleLanguage(lg)} key={lg}>
-            {language === lg ? "-" : ""} {lang(lg).toUpperCase()}
+          <MenuItem onClick={() => handleLanguage(lg)} key={lg} className={language === lg ? classes.activeMenuItem : null}>
+            {lang(lg)}
           </MenuItem>
         ))}
       </Menu>

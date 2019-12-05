@@ -24,7 +24,7 @@ export default [
       }
     ],
     live: "https://myacollection.com/",
-    condition: ["github", "codesandbox"]
+    status: ["github", "codesandbox"]
   },
   {
     id: uuid.v4(),
@@ -45,7 +45,7 @@ export default [
       }
     ],
     live: "https://sloaneboutique.gr/",
-    condition: ["github", "codesandbox"]
+    status: ["github", "codesandbox"]
   },
   {
     id: uuid.v4(),
@@ -66,7 +66,7 @@ export default [
       }
     ],
     live: "https://www.ozarjewels.com/",
-    condition: ["github", "codesandbox"]
+    status: ["github", "codesandbox"]
   },
   {
     id: uuid.v4(),
@@ -87,7 +87,7 @@ export default [
       }
     ],
     live: "https://atlantis-shine.gr/",
-    condition: ["github", "codesandbox"]
+    status: ["github", "codesandbox"]
   },
   {
     id: uuid.v4(),
@@ -112,7 +112,7 @@ export default [
       }
     ],
     live: "http://yolofashions.com",
-    condition: ["github", "codesandbox"]
+    status: ["github", "codesandbox"]
   },
   {
     id: uuid.v4(),
@@ -135,6 +135,6 @@ export default [
     live: "https://cool-burger-builder.firebaseapp.com/",
     github: "https://github.com/panoscool/burger-builder",
     codesandbox: "https://codesandbox.io/s/github/panoscool/burger-builder",
-    condition: []
+    status: []
   }
 ];

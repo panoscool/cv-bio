@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
 function ProjectCard(props) {
   const classes = useStyles();
 
-  const { img, title, infos, live, github, codesandbox, condition } = props;
+  const { img, title, infos, status, live, github, codesandbox } = props;
 
   const buttons = [
     { disabled: "github", href: github, label: "GitHub" },
@@ -50,7 +50,7 @@ function ProjectCard(props) {
             key={index}
             size="small"
             color="secondary"
-            disabled={condition.includes(obj.disabled)}
+            disabled={status.includes(obj.disabled)}
           >
             <a
               href={obj.href}
