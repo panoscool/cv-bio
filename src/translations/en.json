@@ -13,11 +13,11 @@
   "ProjectStatusInProgress": "Status: In progress",
   "ProjectBuildWith": "Build with:",
   "ProjectExtras": "Additional:",
-  "WorkPageLaptopTitle": "Desktop & Laptop",
-  "WorkPageLaptopRepair": [
+  "SkillsPageLaptopTitle": "Desktop & Laptop",
+  "SkillsPageLaptopRepair": [
     "Desktop & Laptop Repair",
     "Software & Hardware Update",
-    "Setup & configure computer networking",
+    "Setup & configure computer netSkillsing",
     "Scan and remove viruses",
     "Data Backup",
     "Data recovery from corrupted drives",
@@ -26,22 +26,22 @@
     "Password recovery",
     "Parental control - Child safety"
   ],
-  "WorkPageMobileTitle": "Mobile & Tablet",
-  "WorkPageMobileRepair": [
+  "SkillsPageMobileTitle": "Mobile & Tablet",
+  "SkillsPageMobileRepair": [
     "Software update",
     "Data backup",
     "Password and pattern recovery"
   ],
-  "WorkPageWebTitle": "Web Services",
-  "WorkPageWebList": [
+  "SkillsPageWebTitle": "Web Services",
+  "SkillsPageWebList": [
     "Site support",
     "Analytics",
     "Websites / Web apps development",
     "Social media integration",
-    "Digital marketing (Google Ads, Facebook / Instagram Ads, Bing Ads)"
+    "Digital marketing (Google Ads, Facebook / Instagram Ads)"
   ],
-  "WorkPageLearningTitle": "Computer Lessons",
-  "WorkPageLearningList": [
+  "SkillsPageLearningTitle": "Computer Lessons",
+  "SkillsPageLearningList": [
     "Internet / Email",
     "Microsoft Office (Word, Excel, PowerPoint, Outlook)",
     "Operating Systems (Windows, macOS, Linux)",

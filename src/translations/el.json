@@ -13,8 +13,8 @@
   "ProjectStatusInProgress": "Κατάσταση: Υπό κατασκευή",
   "ProjectBuildWith": "Κατασκευή:",
   "ProjectExtras": "Επιπλέον:",
-  "WorkPageLaptopTitle": "Επισκευές Η/Υ & Laptop",
-  "WorkPageLaptopRepair": [
+  "SkillsPageLaptopTitle": "Επισκευές Η/Υ & Laptop",
+  "SkillsPageLaptopRepair": [
     "Επισκευή",
     "Αναβάθμιση λειρουργικού και υλικού",
     "Εγκατάσταση και ρύθμιση δικτύου υπολογιστών",
@@ -26,22 +26,22 @@
     "Ξεκλείδωμα κωδικού",
     "Γονικός έλεγχος - παιδική ασφάλεια"
   ],
-  "WorkPageMobileTitle": "Επισκευές Κινητών & Tablet",
-  "WorkPageMobileRepair": [
+  "SkillsPageMobileTitle": "Επισκευές Κινητών & Tablet",
+  "SkillsPageMobileRepair": [
     "Αναβάθμιση λειτουργικού",
     "Αντιγράφο ασφαλείας",
     "Ξεκλείδωμα κωδικού και μοτίβου"
   ],
-  "WorkPageWebTitle": "Υπηρεσίες Internet",
-  "WorkPageWebList": [
+  "SkillsPageWebTitle": "Υπηρεσίες Internet",
+  "SkillsPageWebList": [
     "Δημιουργία ιστοσελίδων",
     "Συντήρηση",
     "Στατιστικά στοιχεία",
     "Προβολή στα κοινωνικά δίκτυα",
-    "Διαφημίσεις (Google Ads, Facebook / Instagram Ads, Bing Ads)"
+    "Διαφημίσεις (Google Ads, Facebook / Instagram Ads)"
   ],
-  "WorkPageLearningTitle": "Μαθήματα Ηλεκτρονικών Υπολογιστών",
-  "WorkPageLearningList": [
+  "SkillsPageLearningTitle": "Μαθήματα Ηλεκτρονικών Υπολογιστών",
+  "SkillsPageLearningList": [
     "Internet / email",
     "Λειτουργικά συστήματα (Windows, macOS, Linux)",
     "Microsoft Office (Word, Excel, PowerPoint, Outlook)",
