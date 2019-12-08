@@ -1,9 +1,9 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
-import ProjectCard from './ProjectCard';
+import ProjectCard from "./ProjectCard";
 import projects from "../../data/projects";
 
-function FullWidthGrid() {
+function ProjectsPage() {
   return (
     <Grid container spacing={1}>
       {projects.map(obj => (
@@ -15,4 +15,4 @@ function FullWidthGrid() {
   );
 }
 
-export default FullWidthGrid;
+export default ProjectsPage;

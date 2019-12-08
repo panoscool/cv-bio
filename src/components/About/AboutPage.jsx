@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Resume from "./Resume";
-import Page from "../Layout/Page";
+import Paper from "@material-ui/core/Paper";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import resume from "../../data/resume";
 
@@ -12,6 +12,10 @@ const useStyles = makeStyles(theme => ({
   },
   namePadding: {
     paddingTop: "2em"
+  },
+  paper: {
+    padding: theme.spacing(2),
+    color: theme.palette.text.secondary
   }
 }));
 
@@ -21,7 +25,7 @@ function About() {
 
   return (
     <div className={classes.root}>
-      <Page>
+      <Paper className={classes.paper}>
         <Grid container spacing={2}>
           <Grid item xs={width > 960 ? 4 : 12}>
             <div style={{ textAlign: "center" }}>
@@ -44,7 +48,7 @@ function About() {
             ))}
           </Grid>
         </Grid>
-      </Page>
+      </Paper>
     </div>
   );
 }
