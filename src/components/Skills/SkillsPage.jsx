@@ -3,7 +3,7 @@ import Grid from "@material-ui/core/Grid";
 import SkillsCard from "./SkillsCard";
 import skills from "../../data/skills";
 
-function FullWidthGrid() {
+function SkillsPage() {
   return (
     <Grid container spacing={1}>
       {skills.map(obj => (
@@ -15,4 +15,4 @@ function FullWidthGrid() {
   );
 }
 
-export default FullWidthGrid;
+export default SkillsPage;

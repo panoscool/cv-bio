@@ -14,7 +14,7 @@
   "ProjectBuildWith": "Build with:",
   "ProjectExtras": "Additional:",
   "SkillsPageLaptopTitle": "Desktop & Laptop",
-  "SkillsPageLaptopRepair": [
+  "SkillsPageLaptopList": [
     "Desktop & Laptop Repair",
     "Software & Hardware Update",
     "Setup & configure computer netSkillsing",
@@ -27,7 +27,7 @@
     "Parental control - Child safety"
   ],
   "SkillsPageMobileTitle": "Mobile & Tablet",
-  "SkillsPageMobileRepair": [
+  "SkillsPageMobileList": [
     "Software update",
     "Data backup",
     "Password and pattern recovery"

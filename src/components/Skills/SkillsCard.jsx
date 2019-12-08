@@ -9,12 +9,12 @@ import { LanguageContext } from "../../context/LanguageContext";
 
 const useStyles = makeStyles(theme => ({
   card: {
-    width: 'auto',
+    width: "auto"
   },
   media: {
     height: 0,
-    paddingTop: '56.25%', // 16:9
-  },
+    paddingTop: "56.25%" // 16:9
+  }
 }));
 
 function SkillsCard(props) {

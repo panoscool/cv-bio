@@ -5,20 +5,17 @@ import "./index.css";
 import App from "./App";
 import LanguageProvider from "./context/LanguageContext";
 import ThemeProvider from "./context/ThemeContext";
-import ModalProvider from './context/ModalContext';
 import * as serviceWorker from "./serviceWorker";
 
 const app = (
-    <BrowserRouter>
-      <LanguageProvider>
-        <ThemeProvider>
-          <ModalProvider>
-            <App />
-          </ModalProvider>
-        </ThemeProvider>
-      </LanguageProvider>
-    </BrowserRouter>
-  )
+  <BrowserRouter>
+    <LanguageProvider>
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
+    </LanguageProvider>
+  </BrowserRouter>
+);
 
 ReactDOM.render(app, document.getElementById("root"));
 

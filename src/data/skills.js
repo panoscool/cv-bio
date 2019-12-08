@@ -1,4 +1,4 @@
-import uuid from 'uuid';
+import uuid from "uuid";
 
 export default [
   {
@@ -13,14 +13,14 @@ export default [
     img: "/assets/images/service-icon.jpg",
     icon: "fas fa-laptop",
     title: "SkillsPageLaptopTitle",
-    list: "SkillsPageLaptopRepair"
+    list: "SkillsPageLaptopList"
   },
   {
     id: uuid.v4(),
     img: "/assets/images/update-icon.jpg",
     icon: "fas fa-mobile",
     title: "SkillsPageMobileTitle",
-    list: "SkillsPageMobileRepair"
+    list: "SkillsPageMobileList"
   },
   {
     id: uuid.v4(),

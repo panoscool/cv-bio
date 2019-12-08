@@ -14,7 +14,7 @@
   "ProjectBuildWith": "Κατασκευή:",
   "ProjectExtras": "Επιπλέον:",
   "SkillsPageLaptopTitle": "Επισκευές Η/Υ & Laptop",
-  "SkillsPageLaptopRepair": [
+  "SkillsPageLaptopList": [
     "Επισκευή",
     "Αναβάθμιση λειρουργικού και υλικού",
     "Εγκατάσταση και ρύθμιση δικτύου υπολογιστών",
@@ -27,7 +27,7 @@
     "Γονικός έλεγχος - παιδική ασφάλεια"
   ],
   "SkillsPageMobileTitle": "Επισκευές Κινητών & Tablet",
-  "SkillsPageMobileRepair": [
+  "SkillsPageMobileList": [
     "Αναβάθμιση λειτουργικού",
     "Αντιγράφο ασφαλείας",
     "Ξεκλείδωμα κωδικού και μοτίβου"
