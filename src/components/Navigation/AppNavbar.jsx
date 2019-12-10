@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import { Link, withRouter } from "react-router-dom";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -39,19 +39,16 @@ const useStyles = makeStyles(theme => ({
 
 function AppNavbar({ location: { pathname } }) {
   const classes = useStyles();
-
   const [mobileOpen, setMobileOpen] = useState(false);
   const [logoOpen, setLogoOpen] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setLogoOpen(false), 3000);
+  });
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
-
-  const handleLogo = () => {
-    setLogoOpen(false);
-  };
-
-  setTimeout(() => handleLogo(), 3000);
 
   const styles = { textDecoration: "inherit", color: "inherit" };
 
@@ -78,8 +75,8 @@ function AppNavbar({ location: { pathname } }) {
                   height="35px"
                 />
               ) : (
-                  <span>Panos K.</span>
-                )}
+                <span>Panos K.</span>
+              )}
             </Link>
           </Typography>
           <MenuLinks />

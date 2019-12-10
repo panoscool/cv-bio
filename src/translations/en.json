@@ -13,38 +13,58 @@
   "ProjectStatusInProgress": "Status: In progress",
   "ProjectBuildWith": "Build with:",
   "ProjectExtras": "Additional:",
+  "SkillsPageWebTitle": "Web Services",
+  "SkillsPageWebList": [
+    { "title": "Site support", "description": "Coming soon" },
+    { "title": "Analytics", "description": "Coming soon" },
+    {
+      "title": "Websites / Web apps development",
+      "description": "Coming soon"
+    },
+    { "title": "Social media integration", "description": "Coming soon" },
+    {
+      "title": "Digital marketing (Google Ads, Facebook / Instagram Ads)",
+      "description": "Coming soon"
+    }
+  ],
   "SkillsPageLaptopTitle": "Desktop & Laptop",
   "SkillsPageLaptopList": [
-    "Desktop & Laptop Repair",
-    "Software & Hardware Update",
-    "Setup & configure computer netSkillsing",
-    "Scan and remove viruses",
-    "Data Backup",
-    "Data recovery from corrupted drives",
-    "Operation System installation",
-    "Installation of peripheral devices (printers, scanners etc)",
-    "Password recovery",
-    "Parental control - Child safety"
+    { "title": "Desktop & Laptop Repair", "description": "Coming soon" },
+    { "title": "Software & Hardware Update", "description": "Coming soon" },
+    {
+      "title": "Setup & configure computer netSkillsing",
+      "description": "Coming soon"
+    },
+    { "title": "Scan and remove viruses", "description": "Coming soon" },
+    { "title": "Data Backup", "description": "Coming soon" },
+    {
+      "title": "Data recovery from corrupted drives",
+      "description": "Coming soon"
+    },
+    { "title": "Operation System installation", "description": "Coming soon" },
+    {
+      "title": "Installation of peripheral devices (printers, scanners etc)",
+      "description": "Coming soon"
+    },
+    { "title": "Parental control - Child safety", "description": "Coming soon" }
   ],
   "SkillsPageMobileTitle": "Mobile & Tablet",
   "SkillsPageMobileList": [
-    "Software update",
-    "Data backup",
-    "Password and pattern recovery"
-  ],
-  "SkillsPageWebTitle": "Web Services",
-  "SkillsPageWebList": [
-    "Site support",
-    "Analytics",
-    "Websites / Web apps development",
-    "Social media integration",
-    "Digital marketing (Google Ads, Facebook / Instagram Ads)"
+    { "title": "Software update", "description": "Coming soon" },
+    { "title": "Data backup", "description": "Coming soon" },
+    { "title": "Password and pattern recovery", "description": "Coming soon" }
   ],
   "SkillsPageLearningTitle": "Computer Lessons",
   "SkillsPageLearningList": [
-    "Internet / Email",
-    "Microsoft Office (Word, Excel, PowerPoint, Outlook)",
-    "Operating Systems (Windows, macOS, Linux)",
-    "Software installation"
+    { "title": "Internet / Email", "description": "Coming soon" },
+    {
+      "title": "Microsoft Office (Word, Excel, PowerPoint, Outlook)",
+      "description": "Coming soon"
+    },
+    {
+      "title": "Operating Systems (Windows, macOS, Linux)",
+      "description": "Coming soon"
+    },
+    { "title": "Software installation", "description": "Coming soon" }
   ]
 }

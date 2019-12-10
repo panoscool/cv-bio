@@ -13,38 +13,64 @@
   "ProjectStatusInProgress": "Κατάσταση: Υπό κατασκευή",
   "ProjectBuildWith": "Κατασκευή:",
   "ProjectExtras": "Επιπλέον:",
+  "SkillsPageWebTitle": "Υπηρεσίες Internet",
+  "SkillsPageWebList": [
+    { "title": "Δημιουργία ιστοσελίδων", "description": "Coming soon" },
+    { "title": "Συντήρηση", "description": "Coming soon" },
+    { "title": "Στατιστικά στοιχεία", "description": "Coming soon" },
+    { "title": "Προβολή στα κοινωνικά δίκτυα", "description": "Coming soon" },
+    {
+      "title": "Διαφημίσεις (Google Ads, Facebook / Instagram Ads)",
+      "description": "Coming soon"
+    }
+  ],
   "SkillsPageLaptopTitle": "Επισκευές Η/Υ & Laptop",
   "SkillsPageLaptopList": [
-    "Επισκευή",
-    "Αναβάθμιση λειρουργικού και υλικού",
-    "Εγκατάσταση και ρύθμιση δικτύου υπολογιστών",
-    "Ανίχνευση και αφαίρεση ιων",
-    "Αντίγραφο ασφαλείας",
-    "Ανάκτηση δεδομένων απο κατεστραμένα μέσα",
-    "Εγατάσταση λειτουργικού συστήματος",
-    "Εγατάσταση περιφερειακών (εκτυπωτές, σαρωτές, πολυμηχανήματα κτλ)",
-    "Ξεκλείδωμα κωδικού",
-    "Γονικός έλεγχος - παιδική ασφάλεια"
+    { "title": "Επισκευή", "description": "Coming soon" },
+    {
+      "title": "Αναβάθμιση λειρουργικού και υλικού",
+      "description": "Coming soon"
+    },
+    {
+      "title": "Εγκατάσταση και ρύθμιση δικτύου υπολογιστών",
+      "description": "Coming soon"
+    },
+    { "title": "Ανίχνευση και αφαίρεση ιων", "description": "Coming soon" },
+    { "title": "Αντίγραφο ασφαλείας", "description": "Coming soon" },
+    {
+      "title": "Ανάκτηση δεδομένων απο κατεστραμένα μέσα",
+      "description": "Coming soon"
+    },
+    {
+      "title": "Εγατάσταση λειτουργικού συστήματος",
+      "description": "Coming soon"
+    },
+    {
+      "title": "Εγατάσταση περιφερειακών (εκτυπωτές, σαρωτές, πολυμηχανήματα κτλ)",
+      "description": "Coming soon"
+    },
+    {
+      "title": "Γονικός έλεγχος - παιδική ασφάλεια",
+      "description": "Coming soon"
+    }
   ],
   "SkillsPageMobileTitle": "Επισκευές Κινητών & Tablet",
   "SkillsPageMobileList": [
-    "Αναβάθμιση λειτουργικού",
-    "Αντιγράφο ασφαλείας",
-    "Ξεκλείδωμα κωδικού και μοτίβου"
-  ],
-  "SkillsPageWebTitle": "Υπηρεσίες Internet",
-  "SkillsPageWebList": [
-    "Δημιουργία ιστοσελίδων",
-    "Συντήρηση",
-    "Στατιστικά στοιχεία",
-    "Προβολή στα κοινωνικά δίκτυα",
-    "Διαφημίσεις (Google Ads, Facebook / Instagram Ads)"
+    { "title": "Αναβάθμιση λειτουργικού", "description": "Coming soon" },
+    { "title": "Αντιγράφο ασφαλείας", "description": "Coming soon" },
+    { "title": "Ξεκλείδωμα κωδικού και μοτίβου", "description": "Coming soon" }
   ],
   "SkillsPageLearningTitle": "Μαθήματα Ηλεκτρονικών Υπολογιστών",
   "SkillsPageLearningList": [
-    "Internet / email",
-    "Λειτουργικά συστήματα (Windows, macOS, Linux)",
-    "Microsoft Office (Word, Excel, PowerPoint, Outlook)",
-    "Εγκατάσταση εφαρμογών"
+    { "title": "Internet / email", "description": "Coming soon" },
+    {
+      "title": "Λειτουργικά συστήματα (Windows, macOS, Linux)",
+      "description": "Coming soon"
+    },
+    {
+      "title": "Microsoft Office (Word, Excel, PowerPoint, Outlook)",
+      "description": "Coming soon"
+    },
+    { "title": "Εγκατάσταση εφαρμογών", "description": "Coming soon" }
   ]
 }
