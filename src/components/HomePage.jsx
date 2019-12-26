@@ -30,7 +30,7 @@ function CenteredGrid() {
     <div className={classes.root}>
       <Paper className={classes.paper}>
         <img
-          src="/assets/images/avatar.png"
+          src="/assets/avatar.png"
           alt="avatar"
           className="avatar-img"
         />

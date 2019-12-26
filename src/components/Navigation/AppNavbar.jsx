@@ -69,14 +69,14 @@ function AppNavbar({ location: { pathname } }) {
             <Link to="/" style={styles}>
               {logoOpen ? (
                 <img
-                  src="/assets/images/logo.png"
+                  src="/assets/logo.png"
                   alt="PanosCool"
                   width="105px"
                   height="35px"
                 />
               ) : (
-                <span>Panos K.</span>
-              )}
+                  <span>Panos K.</span>
+                )}
             </Link>
           </Typography>
           <MenuLinks />

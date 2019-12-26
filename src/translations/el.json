@@ -15,62 +15,98 @@
   "ProjectExtras": "Επιπλέον:",
   "SkillsPageWebTitle": "Υπηρεσίες Internet",
   "SkillsPageWebList": [
-    { "title": "Δημιουργία ιστοσελίδων", "description": "Coming soon" },
-    { "title": "Συντήρηση", "description": "Coming soon" },
-    { "title": "Στατιστικά στοιχεία", "description": "Coming soon" },
-    { "title": "Προβολή στα κοινωνικά δίκτυα", "description": "Coming soon" },
+    {
+      "title": "Δημιουργία ιστοσελίδων",
+      "description": "Skill description"
+    },
+    {
+      "title": "Συντήρηση",
+      "description": "Skill description"
+    },
+    {
+      "title": "Στατιστικά στοιχεία",
+      "description": "Skill description"
+    },
+    {
+      "title": "Προβολή στα κοινωνικά δίκτυα",
+      "description": "Skill description"
+    },
     {
       "title": "Διαφημίσεις (Google Ads, Facebook / Instagram Ads)",
-      "description": "Coming soon"
+      "description": "Skill description"
     }
   ],
   "SkillsPageLaptopTitle": "Επισκευές Η/Υ & Laptop",
   "SkillsPageLaptopList": [
-    { "title": "Επισκευή", "description": "Coming soon" },
+    {
+      "title": "Επισκευή",
+      "description": "Skill description"
+    },
     {
       "title": "Αναβάθμιση λειρουργικού και υλικού",
-      "description": "Coming soon"
+      "description": "Skill description"
     },
     {
       "title": "Εγκατάσταση και ρύθμιση δικτύου υπολογιστών",
-      "description": "Coming soon"
+      "description": "Skill description"
     },
-    { "title": "Ανίχνευση και αφαίρεση ιων", "description": "Coming soon" },
-    { "title": "Αντίγραφο ασφαλείας", "description": "Coming soon" },
+    {
+      "title": "Ανίχνευση και αφαίρεση ιων",
+      "description": "Skill description"
+    },
+    {
+      "title": "Αντίγραφο ασφαλείας",
+      "description": "Skill description"
+    },
     {
       "title": "Ανάκτηση δεδομένων απο κατεστραμένα μέσα",
-      "description": "Coming soon"
+      "description": "Skill description"
     },
     {
       "title": "Εγατάσταση λειτουργικού συστήματος",
-      "description": "Coming soon"
+      "description": "Skill description"
     },
     {
       "title": "Εγατάσταση περιφερειακών (εκτυπωτές, σαρωτές, πολυμηχανήματα κτλ)",
-      "description": "Coming soon"
+      "description": "Skill description"
     },
     {
       "title": "Γονικός έλεγχος - παιδική ασφάλεια",
-      "description": "Coming soon"
+      "description": "Skill description"
     }
   ],
   "SkillsPageMobileTitle": "Επισκευές Κινητών & Tablet",
   "SkillsPageMobileList": [
-    { "title": "Αναβάθμιση λειτουργικού", "description": "Coming soon" },
-    { "title": "Αντιγράφο ασφαλείας", "description": "Coming soon" },
-    { "title": "Ξεκλείδωμα κωδικού και μοτίβου", "description": "Coming soon" }
+    {
+      "title": "Αναβάθμιση λειτουργικού",
+      "description": "Skill description"
+    },
+    {
+      "title": "Αντιγράφο ασφαλείας",
+      "description": "Skill description"
+    },
+    {
+      "title": "Ξεκλείδωμα κωδικού και μοτίβου",
+      "description": "Skill description"
+    }
   ],
   "SkillsPageLearningTitle": "Μαθήματα Ηλεκτρονικών Υπολογιστών",
   "SkillsPageLearningList": [
-    { "title": "Internet / email", "description": "Coming soon" },
+    {
+      "title": "Internet / email",
+      "description": "Skill description"
+    },
     {
       "title": "Λειτουργικά συστήματα (Windows, macOS, Linux)",
-      "description": "Coming soon"
+      "description": "Skill description"
     },
     {
       "title": "Microsoft Office (Word, Excel, PowerPoint, Outlook)",
-      "description": "Coming soon"
+      "description": "Skill description"
     },
-    { "title": "Εγκατάσταση εφαρμογών", "description": "Coming soon" }
+    {
+      "title": "Εγκατάσταση εφαρμογών",
+      "description": "Skill description"
+    }
   ]
 }

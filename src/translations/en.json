@@ -15,56 +15,98 @@
   "ProjectExtras": "Additional:",
   "SkillsPageWebTitle": "Web Services",
   "SkillsPageWebList": [
-    { "title": "Site support", "description": "Coming soon" },
-    { "title": "Analytics", "description": "Coming soon" },
+    {
+      "title": "Site support",
+      "description": "Skill description"
+    },
+    {
+      "title": "Analytics",
+      "description": "Skill description"
+    },
     {
       "title": "Websites / Web apps development",
-      "description": "Coming soon"
+      "description": "Skill description"
     },
-    { "title": "Social media integration", "description": "Coming soon" },
+    {
+      "title": "Social media integration",
+      "description": "Skill description"
+    },
     {
       "title": "Digital marketing (Google Ads, Facebook / Instagram Ads)",
-      "description": "Coming soon"
+      "description": "Skill description"
     }
   ],
   "SkillsPageLaptopTitle": "Desktop & Laptop",
   "SkillsPageLaptopList": [
-    { "title": "Desktop & Laptop Repair", "description": "Coming soon" },
-    { "title": "Software & Hardware Update", "description": "Coming soon" },
     {
-      "title": "Setup & configure computer netSkillsing",
-      "description": "Coming soon"
+      "title": "Desktop & Laptop Repair",
+      "description": "Skill description"
     },
-    { "title": "Scan and remove viruses", "description": "Coming soon" },
-    { "title": "Data Backup", "description": "Coming soon" },
+    {
+      "title": "Software & Hardware Update",
+      "description": "Skill description"
+    },
+    {
+      "title": "Setup & configure computer network",
+      "description": "Skill description"
+    },
+    {
+      "title": "Scan and remove viruses",
+      "description": "Skill description"
+    },
+    {
+      "title": "Data Backup",
+      "description": "Skill description"
+    },
     {
       "title": "Data recovery from corrupted drives",
-      "description": "Coming soon"
+      "description": "Skill description"
     },
-    { "title": "Operation System installation", "description": "Coming soon" },
+    {
+      "title": "Operation System installation",
+      "description": "Skill description"
+    },
     {
       "title": "Installation of peripheral devices (printers, scanners etc)",
-      "description": "Coming soon"
+      "description": "Skill description"
     },
-    { "title": "Parental control - Child safety", "description": "Coming soon" }
+    {
+      "title": "Parental control - Child safety",
+      "description": "Skill description"
+    }
   ],
   "SkillsPageMobileTitle": "Mobile & Tablet",
   "SkillsPageMobileList": [
-    { "title": "Software update", "description": "Coming soon" },
-    { "title": "Data backup", "description": "Coming soon" },
-    { "title": "Password and pattern recovery", "description": "Coming soon" }
+    {
+      "title": "Software update",
+      "description": "Skill description"
+    },
+    {
+      "title": "Data backup",
+      "description": "Skill description"
+    },
+    {
+      "title": "Password and pattern recovery",
+      "description": "Skill description"
+    }
   ],
   "SkillsPageLearningTitle": "Computer Lessons",
   "SkillsPageLearningList": [
-    { "title": "Internet / Email", "description": "Coming soon" },
+    {
+      "title": "Internet / Email",
+      "description": "Skill description"
+    },
     {
       "title": "Microsoft Office (Word, Excel, PowerPoint, Outlook)",
-      "description": "Coming soon"
+      "description": "Skill description"
     },
     {
       "title": "Operating Systems (Windows, macOS, Linux)",
-      "description": "Coming soon"
+      "description": "Skill description"
     },
-    { "title": "Software installation", "description": "Coming soon" }
+    {
+      "title": "Software installation",
+      "description": "Skill description"
+    }
   ]
 }

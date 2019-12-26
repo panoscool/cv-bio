@@ -70,6 +70,27 @@ export default [
   },
   {
     id: uuid.v4(),
+    img: "/assets/images/be_the_change-logo.jpg",
+    title: "Be The Change",
+    infos: [
+      {
+        text: "Completed",
+        icon: "fas fa-info-circle"
+      },
+      {
+        text: "WordPress",
+        icon: "fas fa-tools"
+      },
+      {
+        text: "Google Analytics, Social Media",
+        icon: "fas fa-list-ol"
+      }
+    ],
+    live: "https://bethechange.gr/",
+    status: ["github", "codesandbox"]
+  },
+  {
+    id: uuid.v4(),
     img: "/assets/images/atlantis-logo.jpg",
     title: "Atlantis Shine",
     infos: [
@@ -111,7 +132,7 @@ export default [
         icon: "fas fa-bullhorn"
       }
     ],
-    live: "http://yolofashions.com",
+    live: "https://yolofashions.com",
     status: ["github", "codesandbox"]
   },
   {
