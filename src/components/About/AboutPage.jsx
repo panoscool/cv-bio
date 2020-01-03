@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Resume from "./Resume";
 import Paper from "@material-ui/core/Paper";
+import { LanguageContext } from "../../context/LanguageContext";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import resume from "../../data/resume";
 
@@ -21,6 +22,7 @@ const useStyles = makeStyles(theme => ({
 
 function About() {
   const classes = useStyles();
+  const { lang } = useContext(LanguageContext);
   const { width } = useWindowDimensions();
 
   return (
@@ -30,7 +32,7 @@ function About() {
           <Grid item xs={width > 960 ? 4 : 12}>
             <div style={{ textAlign: "center" }}>
               <img
-                src="/assets/images/avatar.png"
+                src="/assets/avatar.png"
                 alt="avatar"
                 className="avatar-img"
               />
@@ -42,7 +44,7 @@ function About() {
           <Grid item xs={width > 960 ? 8 : 12}>
             {resume.map(obj => (
               <div key={obj.title}>
-                <h2>{obj.title}</h2>
+                <h2>{lang(obj.title)}</h2>
                 <Resume {...obj} />
               </div>
             ))}

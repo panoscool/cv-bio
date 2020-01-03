@@ -6,7 +6,6 @@ import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import Hidden from "@material-ui/core/Hidden";
 import Drawer from "@material-ui/core/Drawer";
-import CssBaseline from "@material-ui/core/CssBaseline";
 import { makeStyles } from "@material-ui/core/styles";
 import Menu from "@material-ui/icons/Menu";
 import MenuLinks from "./MenuLinks";
@@ -54,8 +53,6 @@ function AppNavbar({ location: { pathname } }) {
 
   return (
     <Fragment>
-      <CssBaseline />
-
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar>
           <IconButton
