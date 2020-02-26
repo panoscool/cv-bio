@@ -1,6 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import AppNavbar from "./Navigation/AppNavbar";
+import BottomNavbar from './Navigation/BottomNavbar';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -9,11 +10,11 @@ const useStyles = makeStyles(theme => ({
   toolbar: theme.mixins.toolbar,
   content: {
     flexGrow: 1,
-    padding: 16
+    padding: theme.spacing(2, 2, 8, 2)
   }
 }));
 
-function Layout(props) {
+function Layout({ children }) {
   const classes = useStyles();
 
   return (
@@ -21,8 +22,9 @@ function Layout(props) {
       <AppNavbar />
       <main className={classes.content}>
         <div className={classes.toolbar} />
-        {props.children}
+        {children}
       </main>
+      <BottomNavbar />
     </div>
   );
 }

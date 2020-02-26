@@ -1,8 +1,8 @@
-import uuid from 'uuid';
+import cuid from 'cuid';
 
 export default [
   {
-    id: uuid.v4(),
+    id: cuid(),
     img: "/assets/images/mya-logo.jpg",
     title: "Mya Collection",
     infos: [
@@ -27,7 +27,7 @@ export default [
     status: ["github", "codesandbox"]
   },
   {
-    id: uuid.v4(),
+    id: cuid(),
     img: "/assets/images/sloane-logo.jpg",
     title: "Sloane Boutique",
     infos: [
@@ -48,7 +48,7 @@ export default [
     status: ["github", "codesandbox"]
   },
   {
-    id: uuid.v4(),
+    id: cuid(),
     img: "/assets/images/ozar-logo.jpg",
     title: "Ozar World",
     infos: [
@@ -69,7 +69,7 @@ export default [
     status: ["github", "codesandbox"]
   },
   {
-    id: uuid.v4(),
+    id: cuid(),
     img: "/assets/images/be_the_change-logo.jpg",
     title: "Be The Change",
     infos: [
@@ -90,7 +90,7 @@ export default [
     status: ["github", "codesandbox"]
   },
   {
-    id: uuid.v4(),
+    id: cuid(),
     img: "/assets/images/atlantis-logo.jpg",
     title: "Atlantis Shine",
     infos: [
@@ -111,7 +111,7 @@ export default [
     status: ["github", "codesandbox"]
   },
   {
-    id: uuid.v4(),
+    id: cuid(),
     img: "/assets/images/yolo-logo.jpg",
     title: "Yolo Fashions",
     infos: [
@@ -136,7 +136,7 @@ export default [
     status: ["github", "codesandbox"]
   },
   {
-    id: uuid.v4(),
+    id: cuid(),
     img: "/assets/images/burger-logo.jpg",
     title: "Burger Builder",
     infos: [
