@@ -9,7 +9,7 @@ export const ThemeContext = createContext({
 
 export default ({ children }) => {
   const [theme, setTheme] = useState(
-    localStorage.getItem("panos_theme") || "dark"
+    localStorage.getItem("panos_theme") || "light"
   );
 
   const muiTheme = createMuiTheme({
