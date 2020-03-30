@@ -1,7 +1,7 @@
 import React, { useState, createContext } from "react";
 import { ThemeProvider } from "@material-ui/styles";
 import { createMuiTheme } from "@material-ui/core/styles";
-import { teal, amber, grey } from "@material-ui/core/colors";
+import { blue, red } from "@material-ui/core/colors";
 
 export const ThemeContext = createContext({
   setTheme: () => {}
@@ -9,13 +9,13 @@ export const ThemeContext = createContext({
 
 export default ({ children }) => {
   const [theme, setTheme] = useState(
-    localStorage.getItem("panos_theme") || "light"
+    localStorage.getItem("panos_theme") || "dark"
   );
 
   const muiTheme = createMuiTheme({
     palette: {
-      primary: theme === "dark" ? grey : teal,
-      secondary: amber,
+      primary: blue,
+      secondary: red,
       type: theme
     },
     typography: {

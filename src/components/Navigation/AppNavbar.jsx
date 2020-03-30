@@ -7,10 +7,6 @@ import Typography from "@material-ui/core/Typography";
 import NavLinks from "./NavLinks";
 
 const useStyles = makeStyles(theme => ({
-  appBar: {
-    // boxShadow: "none",
-    zIndex: theme.zIndex.drawer + 1
-  },
   grow: {
     flexGrow: 1,
     color: "inherit"
@@ -30,7 +26,7 @@ function AppNavbar() {
   });
 
   return (
-    <AppBar position="fixed" className={classes.appBar}>
+    <AppBar color="transparent" position="static">
       <Toolbar>
         <Typography variant="h6" className={classes.grow} noWrap>
           <Link to="/" className={classes.logoLink}>
@@ -42,8 +38,8 @@ function AppNavbar() {
                 height="35px"
               />
             ) : (
-                <span>Panos K.</span>
-              )}
+              <span>Panos K.</span>
+            )}
           </Link>
         </Typography>
         <NavLinks />
