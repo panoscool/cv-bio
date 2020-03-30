@@ -7,7 +7,9 @@ const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1
   },
-  toolbar: theme.mixins.toolbar,
+  [theme.breakpoints.up('md')]: {
+    toolbar: theme.mixins.toolbar
+  },
   content: {
     flexGrow: 1,
     padding: theme.spacing(2, 2, 8, 2)
