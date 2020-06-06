@@ -38,8 +38,8 @@ function AppNavbar() {
                 height="35px"
               />
             ) : (
-              <span>Panos K.</span>
-            )}
+                <span>Panos K.</span>
+              )}
           </Link>
         </Typography>
         <NavLinks />

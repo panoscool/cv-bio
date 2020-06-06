@@ -7,9 +7,6 @@ const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1
   },
-  [theme.breakpoints.up('md')]: {
-    toolbar: theme.mixins.toolbar
-  },
   content: {
     flexGrow: 1,
     padding: theme.spacing(2, 2, 8, 2)
@@ -23,7 +20,6 @@ function Layout({ children }) {
     <div className={classes.root}>
       <AppNavbar />
       <main className={classes.content}>
-        <div className={classes.toolbar} />
         {children}
       </main>
       <BottomNavbar />
